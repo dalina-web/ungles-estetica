@@ -12,7 +12,7 @@ Veiligheid: lukt het ophalen niet, is het antwoord onverwacht (ook: geen paginat
 vestiging geen enkele review op of krimpt een vestiging van 4 of meer naar minder dan 3 reviews, dan blijft het oude bestand ongemoeid en eindigt het script met exitcode 1 en een melding op stderr.
 "bijgewerkt" verandert alleen als de reviews zelf zijn gewijzigd. Alleen de standaardbibliotheek.
 """
-import json, os, sys, urllib.request
+import json, os, re, sys, urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -27,9 +27,13 @@ API = ("https://widget.treatwell.es/api/v1/venue/{id}/review"
 REVIEWS_URL = "https://www.treatwell.es/establecimiento/{slug}/#reviews"
 AANTAL, MIN_TEKENS, MIN_STERREN, MAX_PAGINAS = 6, 40, 4, 10
 KRIMP_VAN, KRIMP_NAAR = 4, 3  # had een vestiging >= 4 reviews en nu < 3: oude bestand houden
+# Treatwell vervangt de salonnaam in de reviewtekst soms door een plaatshouder ("Recomiendo <UE>."):
+# zulke reviews slaan we over, want de plaatshouder komt letterlijk op de pagina.
+PLAATSHOUDER = re.compile(r"<[^<>\n]{1,60}>")
 SELECTIE = (f"De {AANTAL} recentste reviews (op plaatsingsdatum) per vestiging die Treatwell als geverifieerd "
             f"markeert (verified=true), met {MIN_STERREN} of 5 sterren en een door de klant zelf geschreven tekst "
-            f"van minstens {MIN_TEKENS} tekens. Geen selectie op inhoud; tekst letterlijk overgenomen.")
+            f"van minstens {MIN_TEKENS} tekens, zonder plaatshouder zoals <UE> in de tekst, en hoogstens een "
+            f"review per voornaam. Geen selectie op inhoud; tekst letterlijk overgenomen.")
 
 
 class Fout(Exception):
@@ -53,7 +57,8 @@ def geschikt(r):
     tekst = (r.get("content") or {}).get("content") or ""
     return (r.get("verified") is True and not (r.get("content") or {}).get("generated")
             and r.get("rating") in (4, 5) and r.get("rating") >= MIN_STERREN
-            and len(tekst.strip()) >= MIN_TEKENS)
+            and len(tekst.strip()) >= MIN_TEKENS
+            and not PLAATSHOUDER.search(tekst))
 
 
 def omzetten(r):
@@ -71,8 +76,9 @@ def omzetten(r):
 
 
 def kies(venue_id, haal=haal_pagina):
-    """Loopt de pagina's af (nieuwste eerst) tot er AANTAL geschikte reviews zijn."""
-    gekozen, vorige = [], None
+    """Loopt de pagina's af (nieuwste eerst) tot er AANTAL geschikte reviews zijn.
+    Hoogstens een review per voornaam, zodat er niet drie keer dezelfde klant op de pagina staat."""
+    gekozen, vorige, namen = [], None, set()
     for page in range(MAX_PAGINAS):
         data = haal(venue_id, page)
         for r in data["reviews"]:
@@ -81,7 +87,13 @@ def kies(venue_id, haal=haal_pagina):
                     raise Fout(f"venue {venue_id}: reviews staan niet op datum (nieuwste eerst); volgorde niet te vertrouwen")
                 vorige = r["createdAt"]
                 if geschikt(r) and len(gekozen) < AANTAL:
-                    gekozen.append(omzetten(r))
+                    rij = omzetten(r)
+                    naam = rij["voornaam"].strip().lower()
+                    if naam and naam in namen:
+                        continue
+                    if naam:
+                        namen.add(naam)
+                    gekozen.append(rij)
             except (KeyError, TypeError) as e:
                 raise Fout(f"venue {venue_id}: onverwachte opbouw van een review: {e!r}")
         pag = data.get("pagination")

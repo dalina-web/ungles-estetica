@@ -1,33 +1,15 @@
 {
  "bijgewerkt": "2026-11-17",
- "selectie": "De 6 recentste reviews (op plaatsingsdatum) per vestiging die Treatwell als geverifieerd markeert (verified=true), met 4 of 5 sterren en een door de klant zelf geschreven tekst van minstens 40 tekens. Geen selectie op inhoud; tekst letterlijk overgenomen.",
+ "selectie": "De 6 recentste reviews (op plaatsingsdatum) per vestiging die Treatwell als geverifieerd markeert (verified=true), met 4 of 5 sterren en een door de klant zelf geschreven tekst van minstens 40 tekens, zonder plaatshouder zoals <UE> in de tekst, en hoogstens een review per voornaam. Geen selectie op inhoud; tekst letterlijk overgenomen.",
  "sant-just": {
   "reviews_url": "https://www.treatwell.es/establecimiento/ungles-i-estetica-sant-just-desvern/#reviews",
   "reviews": [
-   {
-    "id": 30409997,
-    "voornaam": "Luis",
-    "datum": "2026-11-11",
-    "sterren": 5,
-    "tekst": "Gracias Valeria, por el servicio de Manicura Semipermanente (Renovar Color). Como siempre el ambiente y la musica excelentes. El Trato muy Profesional y afable. Recomiendo <UE>. Saludo. Luis",
-    "dienst": "Retirada de esmalte permanente",
-    "geverifieerd": true
-   },
    {
     "id": 30338389,
     "voornaam": "Елена",
     "datum": "2026-11-05",
     "sterren": 5,
     "tekst": "Genial, y encima se tardó una hora!!! Sólo!",
-    "dienst": "Manicura semipermanente",
-    "geverifieerd": true
-   },
-   {
-    "id": 30214078,
-    "voornaam": "Luis",
-    "datum": "2026-10-26",
-    "sterren": 5,
-    "tekst": "Hola: Gracias Valeria por la Manicura Semipermanente que me Ofreciste el pasado Viernes dia 23.10. Contento Como Siempre de poder Lucirla. Recomiendo sin Lugar a Dudas el Salon <UE>. SALUDO, Luis",
     "dienst": "Manicura semipermanente",
     "geverifieerd": true
    },
@@ -56,6 +38,24 @@
     "sterren": 5,
     "tekst": "queda muy bonito y llamativo el esmalte que está imantado :)",
     "dienst": "Manicura semipermanente",
+    "geverifieerd": true
+   },
+   {
+    "id": 29783261,
+    "voornaam": "Syra",
+    "datum": "2026-09-22",
+    "sterren": 5,
+    "tekst": "Valeria es una gran profesional, manicura y pedicura impecables como hacía tiempo que no me la hacían. Repetiré.",
+    "dienst": "Manicura, Pedicura",
+    "geverifieerd": true
+   },
+   {
+    "id": 29703928,
+    "voornaam": "Lara",
+    "datum": "2026-09-16",
+    "sterren": 5,
+    "tekst": "Me la recomendó mi prima y desde entonces no voy a ningún sitio más. Alina me deja las uñas perfectas. Se toma su tiempo y es cuidadosa. Ahora la recomiendo yo 💅🏻",
+    "dienst": "Pedicura semipermanente, Manicura semipermanente",
     "geverifieerd": true
    }
   ]
