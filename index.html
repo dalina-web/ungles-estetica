@@ -275,7 +275,7 @@ footer.site a:hover{color:var(--gold)}
   .hero-cta .btn-ghost:hover{background:var(--text);color:#fff}
   .menu{grid-template-columns:1fr 1fr;align-items:start}
   .cats{justify-content:center;flex-wrap:wrap;overflow:visible}
-  .reel{display:grid;grid-template-columns:repeat(5,1fr);overflow:visible;margin:0;padding:0}
+  .reel{display:grid;grid-template-columns:repeat(6,1fr);overflow:visible;margin:0;padding:0}
   .clip{width:auto;max-width:none}
   .photos{columns:4}
   .quotes{grid-template-columns:repeat(3,1fr)}
@@ -815,7 +815,7 @@ function renderJsonLd(){
   if (!PRICES) return;
   const days = { monday:'Monday', tuesday:'Tuesday', wednesday:'Wednesday', thursday:'Thursday', friday:'Friday', saturday:'Saturday', sunday:'Sunday' };
   const graph = SALON_KEYS.map(k => {
-    const p = PRICES[k], s = SALONS[k], a = addr(k), r = p.beoordeling;
+    const p = PRICES[k], s = SALONS[k], a = addr(k);
     const o = {
       '@type': 'NailSalon', '@id': SITE + '#' + k, name: p.naam || 'Ungles i Estètica', url: SITE, image: SITE + 'media/og.jpg',
       telephone: '+' + s.wa,
@@ -825,7 +825,6 @@ function renderJsonLd(){
       potentialAction: { '@type': 'ReserveAction', target: venueUrl(k) }
     };
     if (p.geo && p.geo.lat) o.geo = { '@type': 'GeoCoordinates', latitude: p.geo.lat, longitude: p.geo.lon };
-    if (r && r.count) o.aggregateRating = { '@type': 'AggregateRating', ratingValue: Number(Number(r.average).toFixed(1)), ratingCount: r.count, bestRating: 5, worstRating: 1 };
     return o;
   });
   let el = $('#ld'); if (!el) { el = document.createElement('script'); el.type = 'application/ld+json'; el.id = 'ld'; document.head.appendChild(el); }
