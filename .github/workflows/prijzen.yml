@@ -1,0 +1,64 @@
+name: Prijzen verversen
+
+# Let op: GitHub schakelt geplande workflows automatisch uit na 60 dagen zonder activiteit in de repository
+# (geen commits; dat kan hier, want zonder wijziging bij Treatwell wordt er niets gecommit).
+# Weer aanzetten: tabblad Actions > Prijzen verversen > Enable workflow.
+on:
+  schedule:
+    - cron: "17 3 * * *"   # elke nacht 03:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: prijzen-verversen
+  cancel-in-progress: false
+
+jobs:
+  verversen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      # Exitcode ongelijk aan 0 = run mislukt (rood) en het oude bestand blijft staan.
+      # Mislukken de prijzen, dan stopt de run: reviews worden niet opgehaald en er wordt niets gecommit.
+      - name: Prijzen ophalen bij Treatwell
+        id: prijzen
+        run: python tools/ververs_prijzen.py
+
+      - name: Reviews ophalen bij Treatwell
+        id: reviews
+        run: python tools/ververs_reviews.py
+
+      # Draait ook als alleen de reviews mislukten: de ververste prijzen gaan dan toch naar main
+      # (reviews.json is in dat geval ongewijzigd). De run blijft rood door de mislukte reviews-stap.
+      - name: Wijzigingen committen naar main
+        id: commit
+        if: ${{ !cancelled() && steps.prijzen.outcome == 'success' }}
+        run: |
+          git add -- data/prijzen.json data/reviews.json
+          if git diff --cached --quiet; then
+            echo "Geen wijzigingen."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Prijzen en reviews ververst vanaf Treatwell ($(date -u +%Y-%m-%d))" -- data/prijzen.json data/reviews.json
+          for i in 1 2 3; do
+            if git pull --rebase origin main && git push origin HEAD:main; then
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            echo "Push-poging $i mislukt." >&2
+            sleep 5
+          done
+          echo "Push naar main mislukt na 3 pogingen" >&2
+          exit 1

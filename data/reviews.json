@@ -1,0 +1,122 @@
+{
+ "bijgewerkt": "2026-11-17",
+ "selectie": "De 6 recentste reviews (op plaatsingsdatum) per vestiging die Treatwell als geverifieerd markeert (verified=true), met 4 of 5 sterren en een door de klant zelf geschreven tekst van minstens 40 tekens. Geen selectie op inhoud; tekst letterlijk overgenomen.",
+ "sant-just": {
+  "reviews_url": "https://www.treatwell.es/establecimiento/ungles-i-estetica-sant-just-desvern/#reviews",
+  "reviews": [
+   {
+    "id": 30409997,
+    "voornaam": "Luis",
+    "datum": "2026-11-11",
+    "sterren": 5,
+    "tekst": "Gracias Valeria, por el servicio de Manicura Semipermanente (Renovar Color). Como siempre el ambiente y la musica excelentes. El Trato muy Profesional y afable. Recomiendo <UE>. Saludo. Luis",
+    "dienst": "Retirada de esmalte permanente",
+    "geverifieerd": true
+   },
+   {
+    "id": 30338389,
+    "voornaam": "Елена",
+    "datum": "2026-11-05",
+    "sterren": 5,
+    "tekst": "Genial, y encima se tardó una hora!!! Sólo!",
+    "dienst": "Manicura semipermanente",
+    "geverifieerd": true
+   },
+   {
+    "id": 30214078,
+    "voornaam": "Luis",
+    "datum": "2026-10-26",
+    "sterren": 5,
+    "tekst": "Hola: Gracias Valeria por la Manicura Semipermanente que me Ofreciste el pasado Viernes dia 23.10. Contento Como Siempre de poder Lucirla. Recomiendo sin Lugar a Dudas el Salon <UE>. SALUDO, Luis",
+    "dienst": "Manicura semipermanente",
+    "geverifieerd": true
+   },
+   {
+    "id": 29975784,
+    "voornaam": "Luis",
+    "datum": "2026-10-07",
+    "sterren": 5,
+    "tekst": "Gracias Valeria : Manicura Semipermanente, Elegante, Moderna, Muy Profesional. Ambiente Agradable. Trato Jovial. Saludo Luis",
+    "dienst": "Manicura semipermanente",
+    "geverifieerd": true
+   },
+   {
+    "id": 29901230,
+    "voornaam": "Patricia",
+    "datum": "2026-10-01",
+    "sterren": 5,
+    "tekst": "Trato perfecto de Valeriano, una gran profesional",
+    "dienst": "Manicura, Pedicura",
+    "geverifieerd": true
+   },
+   {
+    "id": 29874417,
+    "voornaam": "Cristina",
+    "datum": "2026-09-29",
+    "sterren": 5,
+    "tekst": "queda muy bonito y llamativo el esmalte que está imantado :)",
+    "dienst": "Manicura semipermanente",
+    "geverifieerd": true
+   }
+  ]
+ },
+ "cornella": {
+  "reviews_url": "https://www.treatwell.es/establecimiento/ungles-i-estetica/#reviews",
+  "reviews": [
+   {
+    "id": 30107070,
+    "voornaam": "Marielvis",
+    "datum": "2026-10-17",
+    "sterren": 5,
+    "tekst": "Olga es la mejor manicurista, muy atenta, meticulosa, cariñosa y hace muy buen trabajo 🩷",
+    "dienst": "Manicura semipermanente",
+    "geverifieerd": true
+   },
+   {
+    "id": 29938980,
+    "voornaam": "Carmen",
+    "datum": "2026-10-04",
+    "sterren": 5,
+    "tekst": "un servicio 💯 ,siempre dan ideas para innovar,muy recomendable",
+    "dienst": "Manicura semipermanente",
+    "geverifieerd": true
+   },
+   {
+    "id": 29871717,
+    "voornaam": "Cristina",
+    "datum": "2026-09-29",
+    "sterren": 5,
+    "tekst": "Trabajan muy bien las uñas y no notas olor a esmalte dentro del establecimiento",
+    "dienst": "Pedicura",
+    "geverifieerd": true
+   },
+   {
+    "id": 29869114,
+    "voornaam": "Loredana",
+    "datum": "2026-09-28",
+    "sterren": 5,
+    "tekst": "Olga es una excelente profesional, la atención y el resultado han sido muy buenos.",
+    "dienst": "Depilación de piernas mujer",
+    "geverifieerd": true
+   },
+   {
+    "id": 29832542,
+    "voornaam": "Loli",
+    "datum": "2026-09-25",
+    "sterren": 5,
+    "tekst": "Es mi primera vez pero no será la última,  me a gustado mucho lo profesional,  perfección, buen ambiente.  Olga estupenda.",
+    "dienst": "Pedicura, Manicura semipermanente",
+    "geverifieerd": true
+   },
+   {
+    "id": 29827680,
+    "voornaam": "Agueda",
+    "datum": "2026-09-25",
+    "sterren": 5,
+    "tekst": "Estoy encantada, siempre salgo muy contenta con el resultado, pero en esta ocasión especialmente contenta. Salgo con una manicura discreta y elegante y una pedicura minuciosa. \nEl lifting de pestañas es espectacular, por muy poco tengo mis pestañas perfectas!\ngracias por la atención tan cálida y profesional. \nSin duda recomendable a todas las personas que se quieren cuidar y lucir perfectas!!!",
+    "dienst": "Lifting de pestañas, Pedicura semipermanente, Manicura semipermanente",
+    "geverifieerd": true
+   }
+  ]
+ }
+}

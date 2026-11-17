@@ -1,0 +1,1380 @@
+{
+ "sant-just": {
+  "venue_id": 504791,
+  "naam": "Ungles i Estètica Sant Just Desvern",
+  "beoordeling": {
+   "weightedAverage": 4.79,
+   "count": 69,
+   "dimensions": [
+    {
+     "name": "Ambiente",
+     "average": 4.81,
+     "count": 51
+    },
+    {
+     "name": "Limpieza",
+     "average": 4.9,
+     "count": 51
+    },
+    {
+     "name": "Empleados",
+     "average": 4.86,
+     "count": 51
+    }
+   ],
+   "displayAverage": "4,8",
+   "average": 4.79
+  },
+  "openingstijden": [
+   {
+    "open": true,
+    "dayOfWeek": "monday",
+    "from": "09:30",
+    "to": "16:00"
+   },
+   {
+    "open": true,
+    "dayOfWeek": "tuesday",
+    "from": "09:30",
+    "to": "20:00"
+   },
+   {
+    "open": true,
+    "dayOfWeek": "wednesday",
+    "from": "09:30",
+    "to": "20:00"
+   },
+   {
+    "open": true,
+    "dayOfWeek": "thursday",
+    "from": "09:30",
+    "to": "20:00"
+   },
+   {
+    "open": true,
+    "dayOfWeek": "friday",
+    "from": "09:30",
+    "to": "20:00"
+   },
+   {
+    "open": true,
+    "dayOfWeek": "saturday",
+    "from": "10:00",
+    "to": "14:00"
+   },
+   {
+    "open": false,
+    "dayOfWeek": "sunday"
+   }
+  ],
+  "groepen": [
+   {
+    "naam": "Manicuras Y Tratamientos De Manos",
+    "diensten": [
+     {
+      "id": "TR6539356",
+      "naam": "Mujer - Manicura semipermanente completa",
+      "min_minuten": 60,
+      "max_minuten": 60,
+      "prijs_vanaf": "40.00",
+      "prijs_tot": "50.00",
+      "opties": [
+       {
+        "id": "12432752",
+        "naam": "Esmalte color",
+        "prijs": "40.00",
+        "was": "40.00",
+        "minuten": 60
+       },
+       {
+        "id": "12432751",
+        "naam": "Esmalte francesa/diseño",
+        "prijs": "45.00",
+        "was": "45.00",
+        "minuten": 60
+       },
+       {
+        "id": "12436677",
+        "naam": "Nivelación y color",
+        "prijs": "45.00",
+        "was": "45.00",
+        "minuten": 60
+       },
+       {
+        "id": "12436678",
+        "naam": "Nivelación y francesa/diseño",
+        "prijs": "50.00",
+        "was": "50.00",
+        "minuten": 60
+       }
+      ]
+     },
+     {
+      "id": "TR6539368",
+      "naam": "Mujer - Retirada de esmalte semipermanente",
+      "min_minuten": 10,
+      "max_minuten": 15,
+      "prijs_vanaf": "5.00",
+      "prijs_tot": "10.00",
+      "opties": [
+       {
+        "id": "12432767",
+        "naam": "Plus retirada de esmalte de otro centro",
+        "prijs": "5.00",
+        "was": "5.00",
+        "minuten": 10
+       },
+       {
+        "id": "13737880",
+        "naam": "Retirada de semipermanente + vitaminas",
+        "prijs": "10.00",
+        "was": "10.00",
+        "minuten": 15
+       }
+      ]
+     },
+     {
+      "id": "TR6541368",
+      "naam": "Mujer - Manicura completa",
+      "min_minuten": 30,
+      "max_minuten": 60,
+      "prijs_vanaf": "25.00",
+      "prijs_tot": "35.00",
+      "opties": [
+       {
+        "id": "12441294",
+        "naam": "Sin esmalte",
+        "prijs": "25.00",
+        "was": "25.00",
+        "minuten": 30
+       },
+       {
+        "id": "12436555",
+        "naam": "Esmalte color",
+        "prijs": "30.00",
+        "was": "30.00",
+        "minuten": 60
+       },
+       {
+        "id": "12436554",
+        "naam": "Esmalte francesa",
+        "prijs": "35.00",
+        "was": "35.00",
+        "minuten": 60
+       }
+      ]
+     },
+     {
+      "id": "TR6541431",
+      "naam": "Mujer - Manicura exprés",
+      "min_minuten": 30,
+      "max_minuten": 30,
+      "prijs_vanaf": "15.00",
+      "prijs_tot": "23.00",
+      "opties": [
+       {
+        "id": "12596643",
+        "naam": "Sin esmalte",
+        "prijs": "15.00",
+        "was": "15.00",
+        "minuten": 30
+       },
+       {
+        "id": "12596641",
+        "naam": "Esmalte color",
+        "prijs": "18.00",
+        "was": "18.00",
+        "minuten": 30
+       },
+       {
+        "id": "12596642",
+        "naam": "Esmalte francesa",
+        "prijs": "23.00",
+        "was": "23.00",
+        "minuten": 30
+       }
+      ]
+     },
+     {
+      "id": "TR6541433",
+      "naam": "Mujer - Manicura semipermanente exprés",
+      "min_minuten": 30,
+      "max_minuten": 30,
+      "prijs_vanaf": "23.00",
+      "prijs_tot": "28.00",
+      "opties": [
+       {
+        "id": "12596653",
+        "naam": "Esmalte color",
+        "prijs": "23.00",
+        "was": "23.00",
+        "minuten": 30
+       },
+       {
+        "id": "12596654",
+        "naam": "Esmalte francesa",
+        "prijs": "28.00",
+        "was": "28.00",
+        "minuten": 30
+       }
+      ]
+     },
+     {
+      "id": "TR6570064",
+      "naam": "Hombre - Manicura",
+      "min_minuten": 30,
+      "max_minuten": 60,
+      "prijs_vanaf": "20.00",
+      "prijs_tot": "40.00",
+      "opties": [
+       {
+        "id": "12489727",
+        "naam": "Manicura completa",
+        "prijs": "20.00",
+        "was": "20.00",
+        "minuten": 30
+       },
+       {
+        "id": "12489728",
+        "naam": "Manicura semipermanente express",
+        "prijs": "30.00",
+        "was": "30.00",
+        "minuten": 30
+       },
+       {
+        "id": "12489726",
+        "naam": "Manicura semipermanente completo",
+        "prijs": "40.00",
+        "was": "40.00",
+        "minuten": 60
+       }
+      ]
+     },
+     {
+      "id": "TP6570212",
+      "naam": "Pack manicura y pedicura semipermanente y retirada",
+      "min_minuten": 130,
+      "max_minuten": 130,
+      "prijs_vanaf": "95.00",
+      "prijs_tot": "95.00",
+      "opties": [
+       {
+        "id": "12489974",
+        "naam": "Pack manicura y pedicura semipermanente y retirada",
+        "prijs": "95.00",
+        "was": "95.00",
+        "minuten": 130
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "naam": "Pedicuras Y Tratamientos De Pies",
+    "diensten": [
+     {
+      "id": "TR6539370",
+      "naam": "Mujer - Pedicura semipermanente spa",
+      "min_minuten": 60,
+      "max_minuten": 60,
+      "prijs_vanaf": "55.00",
+      "prijs_tot": "60.00",
+      "opties": [
+       {
+        "id": "12432770",
+        "naam": "Esmalte color",
+        "prijs": "55.00",
+        "was": "55.00",
+        "minuten": 60
+       },
+       {
+        "id": "12432771",
+        "naam": "Esmalte francesa",
+        "prijs": "60.00",
+        "was": "60.00",
+        "minuten": 60
+       }
+      ]
+     },
+     {
+      "id": "TR6541476",
+      "naam": "Mujer - Pedicura exprés",
+      "min_minuten": 20,
+      "max_minuten": 20,
+      "prijs_vanaf": "18.00",
+      "prijs_tot": "28.00",
+      "opties": [
+       {
+        "id": "13294189",
+        "naam": "Sin esmalte",
+        "prijs": "18.00",
+        "was": "18.00",
+        "minuten": 20
+       },
+       {
+        "id": "13294193",
+        "naam": "Con esmalte tradicional",
+        "prijs": "25.00",
+        "was": "25.00",
+        "minuten": 20
+       },
+       {
+        "id": "13737888",
+        "naam": "Esmalte francesa",
+        "prijs": "28.00",
+        "was": "28.00",
+        "minuten": 20
+       }
+      ]
+     },
+     {
+      "id": "TR6541436",
+      "naam": "Mujer - Pedicura semipermanente exprés",
+      "min_minuten": 30,
+      "max_minuten": 30,
+      "prijs_vanaf": "28.00",
+      "prijs_tot": "33.00",
+      "opties": [
+       {
+        "id": "14060279",
+        "naam": "con esmalte",
+        "prijs": "28.00",
+        "was": "28.00",
+        "minuten": 30
+       },
+       {
+        "id": "14060280",
+        "naam": "esmalte francesa",
+        "prijs": "33.00",
+        "was": "33.00",
+        "minuten": 30
+       }
+      ]
+     },
+     {
+      "id": "TR6541529",
+      "naam": "Mujer - Pedicura completa",
+      "min_minuten": 50,
+      "max_minuten": 60,
+      "prijs_vanaf": "35.00",
+      "prijs_tot": "40.00",
+      "opties": [
+       {
+        "id": "13294182",
+        "naam": "Sin esmalte",
+        "prijs": "35.00",
+        "was": "35.00",
+        "minuten": 50
+       },
+       {
+        "id": "13294183",
+        "naam": "Con esmalte tradicional",
+        "prijs": "40.00",
+        "was": "40.00",
+        "minuten": 60
+       }
+      ]
+     },
+     {
+      "id": "TR6541531",
+      "naam": "Mujer - Pedicura semipermanente completa",
+      "min_minuten": 60,
+      "max_minuten": 60,
+      "prijs_vanaf": "50.00",
+      "prijs_tot": "55.00",
+      "opties": [
+       {
+        "id": "12436869",
+        "naam": "Esmalte color",
+        "prijs": "50.00",
+        "was": "50.00",
+        "minuten": 60
+       },
+       {
+        "id": "12436870",
+        "naam": "Esmalte francesa",
+        "prijs": "55.00",
+        "was": "55.00",
+        "minuten": 60
+       }
+      ]
+     },
+     {
+      "id": "TR6570094",
+      "naam": "Hombre - Pedicura",
+      "min_minuten": 30,
+      "max_minuten": 60,
+      "prijs_vanaf": "30.00",
+      "prijs_tot": "55.00",
+      "opties": [
+       {
+        "id": "12489766",
+        "naam": "Pedicura semipermanente express",
+        "prijs": "30.00",
+        "was": "30.00",
+        "minuten": 30
+       },
+       {
+        "id": "12489832",
+        "naam": "Pedicura completa sin esmalte",
+        "prijs": "35.00",
+        "was": "35.00",
+        "minuten": 60
+       },
+       {
+        "id": "12489767",
+        "naam": "Pedicura semipermanente completa",
+        "prijs": "55.00",
+        "was": "55.00",
+        "minuten": 60
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "naam": "Uñas De Gel, Acrílicas Y Porcelana",
+    "diensten": [
+     {
+      "id": "TR6539758",
+      "naam": "Mujer - Uñas de gel",
+      "min_minuten": 5,
+      "max_minuten": 90,
+      "prijs_vanaf": "5.00",
+      "prijs_tot": "65.00",
+      "opties": [
+       {
+        "id": "12443521",
+        "naam": "Aplicación 1 uña",
+        "prijs": "5.00",
+        "was": "5.00",
+        "minuten": 5
+       },
+       {
+        "id": "12433482",
+        "naam": "Retirada + vitaminas",
+        "prijs": "14.00",
+        "was": "14.00",
+        "minuten": 20
+       },
+       {
+        "id": "12433479",
+        "naam": "Relleno",
+        "prijs": "45.00",
+        "was": "45.00",
+        "minuten": 60
+       },
+       {
+        "id": "12433480",
+        "naam": "Relleno francesa",
+        "prijs": "50.00",
+        "was": "50.00",
+        "minuten": 60
+       },
+       {
+        "id": "12433483",
+        "naam": "Aplicación",
+        "prijs": "60.00",
+        "was": "60.00",
+        "minuten": 90
+       },
+       {
+        "id": "12433481",
+        "naam": "Aplicación francesa",
+        "prijs": "65.00",
+        "was": "65.00",
+        "minuten": 90
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "naam": "Mujer - Depilación Facial Con Cera",
+    "diensten": [
+     {
+      "id": "TR6539763",
+      "naam": "Mujer - Depilación de cejas con cera y pinza",
+      "min_minuten": 15,
+      "max_minuten": 20,
+      "prijs_vanaf": "9.00",
+      "prijs_tot": "11.00",
+      "opties": [
+       {
+        "id": "12433496",
+        "naam": "Retoque",
+        "prijs": "9.00",
+        "was": "9.00",
+        "minuten": 15
+       },
+       {
+        "id": "12441296",
+        "naam": "Diseño de cejas",
+        "prijs": "11.00",
+        "was": "11.00",
+        "minuten": 20
+       }
+      ]
+     },
+     {
+      "id": "TR6545195",
+      "naam": "Mujer - Depilación de labio superior con cera",
+      "min_minuten": 5,
+      "max_minuten": 5,
+      "prijs_vanaf": "5.00",
+      "prijs_tot": "5.00",
+      "opties": [
+       {
+        "id": "12443522",
+        "naam": "Mujer - Depilación de labio superior con cera",
+        "prijs": "5.00",
+        "was": "5.00",
+        "minuten": 5
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "naam": "Manicura Y Pedicura",
+    "diensten": [
+     {
+      "id": "TR6541275",
+      "naam": "Mujer - Manicura y pedicura completa",
+      "min_minuten": 120,
+      "max_minuten": 120,
+      "prijs_vanaf": "60.00",
+      "prijs_tot": "70.00",
+      "opties": [
+       {
+        "id": "12436398",
+        "naam": "Esmalte color",
+        "prijs": "60.00",
+        "was": "60.00",
+        "minuten": 120
+       },
+       {
+        "id": "12436397",
+        "naam": "Esmalte francesa",
+        "prijs": "70.00",
+        "was": "70.00",
+        "minuten": 120
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "naam": "Cejas, Pestañas Y Extensiones",
+    "diensten": [
+     {
+      "id": "TR6629033",
+      "naam": "Mujer - Lifting de pestañas",
+      "min_minuten": 10,
+      "max_minuten": 30,
+      "prijs_vanaf": "10.00",
+      "prijs_tot": "35.00",
+      "opties": [
+       {
+        "id": "12596681",
+        "naam": "Tinte de pestañas",
+        "prijs": "10.00",
+        "was": "10.00",
+        "minuten": 10
+       },
+       {
+        "id": "12596680",
+        "naam": "Lifting",
+        "prijs": "35.00",
+        "was": "35.00",
+        "minuten": 30
+       }
+      ]
+     },
+     {
+      "id": "TR6766389",
+      "naam": "Mujer - Laminación de cejas",
+      "min_minuten": 30,
+      "max_minuten": 30,
+      "prijs_vanaf": "30.00",
+      "prijs_tot": "30.00",
+      "opties": [
+       {
+        "id": "12858793",
+        "naam": "1 hora 30 minutos",
+        "prijs": "30.00",
+        "was": "30.00",
+        "minuten": 30
+       }
+      ]
+     },
+     {
+      "id": "TR6766394",
+      "naam": "Mujer - Tinte de cejas",
+      "min_minuten": 20,
+      "max_minuten": 20,
+      "prijs_vanaf": "10.00",
+      "prijs_tot": "10.00",
+      "opties": [
+       {
+        "id": "12858798",
+        "naam": "30 minutos",
+        "prijs": "10.00",
+        "was": "10.00",
+        "minuten": 20
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "adres": {
+   "straat": "Carrer Bonavista, 75",
+   "postcode": "08960",
+   "plaats": "Sant Just Desvern"
+  },
+  "geo": {
+   "lat": 41.3835858,
+   "lon": 2.0769095
+  },
+  "url": "https://www.treatwell.es/establecimiento/ungles-i-estetica-sant-just-desvern/",
+  "reviews_url": "https://www.treatwell.es/establecimiento/ungles-i-estetica-sant-just-desvern/#reviews"
+ },
+ "cornella": {
+  "venue_id": 431611,
+  "naam": "Ungles i Estètica",
+  "beoordeling": {
+   "weightedAverage": 4.84,
+   "count": 190,
+   "dimensions": [
+    {
+     "name": "Ambiente",
+     "average": 4.86,
+     "count": 140
+    },
+    {
+     "name": "Limpieza",
+     "average": 4.89,
+     "count": 140
+    },
+    {
+     "name": "Empleados",
+     "average": 4.89,
+     "count": 140
+    }
+   ],
+   "displayAverage": "4,8",
+   "average": 4.84
+  },
+  "openingstijden": [
+   {
+    "open": true,
+    "dayOfWeek": "monday",
+    "from": "10:00",
+    "to": "20:00"
+   },
+   {
+    "open": true,
+    "dayOfWeek": "tuesday",
+    "from": "10:00",
+    "to": "20:00"
+   },
+   {
+    "open": true,
+    "dayOfWeek": "wednesday",
+    "from": "10:00",
+    "to": "20:00"
+   },
+   {
+    "open": true,
+    "dayOfWeek": "thursday",
+    "from": "10:00",
+    "to": "20:00"
+   },
+   {
+    "open": true,
+    "dayOfWeek": "friday",
+    "from": "10:00",
+    "to": "20:00"
+   },
+   {
+    "open": true,
+    "dayOfWeek": "saturday",
+    "from": "09:00",
+    "to": "16:00"
+   },
+   {
+    "open": false,
+    "dayOfWeek": "sunday"
+   }
+  ],
+  "groepen": [
+   {
+    "naam": "Manicuras Y Tratamientos De Manos",
+    "diensten": [
+     {
+      "id": "TR4570852",
+      "naam": "Manicura exprés",
+      "min_minuten": 20,
+      "max_minuten": 20,
+      "prijs_vanaf": "10.00",
+      "prijs_tot": "13.00",
+      "opties": [
+       {
+        "id": "12746533",
+        "naam": "sin esmalte",
+        "prijs": "10.00",
+        "was": "10.00",
+        "minuten": 20
+       },
+       {
+        "id": "12746534",
+        "naam": "con esmalte tradicional",
+        "prijs": "13.00",
+        "was": "13.00",
+        "minuten": 20
+       }
+      ]
+     },
+     {
+      "id": "TR4570853",
+      "naam": "Manicura semipermanente completa",
+      "min_minuten": 60,
+      "max_minuten": 60,
+      "prijs_vanaf": "25.00",
+      "prijs_tot": "28.00",
+      "opties": [
+       {
+        "id": "8618158",
+        "naam": "Esmalte semipermanente",
+        "prijs": "25.00",
+        "was": "25.00",
+        "minuten": 60
+       },
+       {
+        "id": "14558297",
+        "naam": "Esmalte francesa/diseño",
+        "prijs": "28.00",
+        "was": "28.00",
+        "minuten": 60
+       }
+      ]
+     },
+     {
+      "id": "TR4572460",
+      "naam": "Mujer - Manicura completa",
+      "min_minuten": 20,
+      "max_minuten": 35,
+      "prijs_vanaf": "18.00",
+      "prijs_tot": "21.00",
+      "opties": [
+       {
+        "id": "9314602",
+        "naam": "sin esmalte",
+        "prijs": "18.00",
+        "was": "18.00",
+        "minuten": 20
+       },
+       {
+        "id": "9314603",
+        "naam": "con esmalte tradicional",
+        "prijs": "21.00",
+        "was": "21.00",
+        "minuten": 35
+       }
+      ]
+     },
+     {
+      "id": "TR4598999",
+      "naam": "Mujer - Retirada esmalte anterior",
+      "min_minuten": 15,
+      "max_minuten": 15,
+      "prijs_vanaf": "6.00",
+      "prijs_tot": "6.00",
+      "opties": [
+       {
+        "id": "8676535",
+        "naam": "15 minutos",
+        "prijs": "6.00",
+        "was": "6.00",
+        "minuten": 15
+       }
+      ]
+     },
+     {
+      "id": "TR4601249",
+      "naam": "Mujer - Manicura semipermanente exprés",
+      "min_minuten": 30,
+      "max_minuten": 45,
+      "prijs_vanaf": "15.00",
+      "prijs_tot": "18.00",
+      "opties": [
+       {
+        "id": "8680806",
+        "naam": "sin diseño",
+        "prijs": "15.00",
+        "was": "15.00",
+        "minuten": 30
+       },
+       {
+        "id": "14558498",
+        "naam": "con diseño/francesa/baby boomer",
+        "prijs": "18.00",
+        "was": "18.00",
+        "minuten": 45
+       }
+      ]
+     },
+     {
+      "id": "TR4618331",
+      "naam": "Mujer - Manicura semipermanente con refuerzo de gel",
+      "min_minuten": 60,
+      "max_minuten": 60,
+      "prijs_vanaf": "28.00",
+      "prijs_tot": "28.00",
+      "opties": [
+       {
+        "id": "8714919",
+        "naam": "1 hora",
+        "prijs": "28.00",
+        "was": "28.00",
+        "minuten": 60
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "naam": "Pedicuras Y Tratamientos De Pies",
+    "diensten": [
+     {
+      "id": "TR4570854",
+      "naam": "Pedicura exprés",
+      "min_minuten": 20,
+      "max_minuten": 20,
+      "prijs_vanaf": "13.00",
+      "prijs_tot": "17.00",
+      "opties": [
+       {
+        "id": "12746554",
+        "naam": "sin esmalte",
+        "prijs": "13.00",
+        "was": "13.00",
+        "minuten": 20
+       },
+       {
+        "id": "12746555",
+        "naam": "con esmalte tradicional",
+        "prijs": "17.00",
+        "was": "17.00",
+        "minuten": 20
+       }
+      ]
+     },
+     {
+      "id": "TR4570855",
+      "naam": "Pedicura semipermanente",
+      "min_minuten": 60,
+      "max_minuten": 60,
+      "prijs_vanaf": "33.00",
+      "prijs_tot": "33.00",
+      "opties": [
+       {
+        "id": "8618160",
+        "naam": "1 hora",
+        "prijs": "33.00",
+        "was": "33.00",
+        "minuten": 60
+       }
+      ]
+     },
+     {
+      "id": "TR4572465",
+      "naam": "Mujer - Pedicura completa",
+      "min_minuten": 35,
+      "max_minuten": 45,
+      "prijs_vanaf": "18.00",
+      "prijs_tot": "21.00",
+      "opties": [
+       {
+        "id": "8621480",
+        "naam": "sin esmalte",
+        "prijs": "18.00",
+        "was": "18.00",
+        "minuten": 35
+       },
+       {
+        "id": "8621479",
+        "naam": "con esmalte tradicional",
+        "prijs": "21.00",
+        "was": "21.00",
+        "minuten": 45
+       }
+      ]
+     },
+     {
+      "id": "TR4656983",
+      "naam": "Mujer - Pedicura semipermanente exprés",
+      "min_minuten": 30,
+      "max_minuten": 30,
+      "prijs_vanaf": "21.00",
+      "prijs_tot": "21.00",
+      "opties": [
+       {
+        "id": "8795204",
+        "naam": "30 minutos",
+        "prijs": "21.00",
+        "was": "21.00",
+        "minuten": 30
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "naam": "Uñas De Gel, Acrílicas Y Porcelana",
+    "diensten": [
+     {
+      "id": "TR4598967",
+      "naam": "Mujer - Uñas de gel",
+      "min_minuten": 5,
+      "max_minuten": 100,
+      "prijs_vanaf": "3.00",
+      "prijs_tot": "45.00",
+      "opties": [
+       {
+        "id": "8680744",
+        "naam": "Aplicación una uña",
+        "prijs": "3.00",
+        "was": "3.00",
+        "minuten": 5
+       },
+       {
+        "id": "8676486",
+        "naam": "Retirada",
+        "prijs": "8.00",
+        "was": "8.00",
+        "minuten": 10
+       },
+       {
+        "id": "8676485",
+        "naam": "Relleno",
+        "prijs": "28.00",
+        "was": "28.00",
+        "minuten": 45
+       },
+       {
+        "id": "8676487",
+        "naam": "Aplicación cortas",
+        "prijs": "35.00",
+        "was": "35.00",
+        "minuten": 90
+       },
+       {
+        "id": "8676489",
+        "naam": "Aplicación largas",
+        "prijs": "45.00",
+        "was": "45.00",
+        "minuten": 100
+       }
+      ]
+     },
+     {
+      "id": "TR7663988",
+      "naam": "Plus francesa/diseño/baby boomer",
+      "min_minuten": 10,
+      "max_minuten": 10,
+      "prijs_vanaf": "3.00",
+      "prijs_tot": "3.00",
+      "opties": [
+       {
+        "id": "14558488",
+        "naam": "15 minutos",
+        "prijs": "3.00",
+        "was": "3.00",
+        "minuten": 10
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "naam": "Depilación Facial Con Cera",
+    "diensten": [
+     {
+      "id": "TR4570857",
+      "naam": "Depilación de cejas con cera",
+      "min_minuten": 10,
+      "max_minuten": 10,
+      "prijs_vanaf": "9.00",
+      "prijs_tot": "9.00",
+      "opties": [
+       {
+        "id": "8618162",
+        "naam": "Depilación de cejas con cera",
+        "prijs": "9.00",
+        "was": "9.00",
+        "minuten": 10
+       }
+      ]
+     },
+     {
+      "id": "TR4598995",
+      "naam": "Mujer - Depilación de labio superior con cera",
+      "min_minuten": 5,
+      "max_minuten": 5,
+      "prijs_vanaf": "4.00",
+      "prijs_tot": "4.00",
+      "opties": [
+       {
+        "id": "8676523",
+        "naam": "Mujer - Depilación de labio superior con cera",
+        "prijs": "4.00",
+        "was": "4.00",
+        "minuten": 5
+       }
+      ]
+     },
+     {
+      "id": "TR4650588",
+      "naam": "Tratamiento facial antiedad con colágeno",
+      "min_minuten": 45,
+      "max_minuten": 45,
+      "prijs_vanaf": "32.00",
+      "prijs_tot": "32.00",
+      "opties": [
+       {
+        "id": "8782225",
+        "naam": "45 minutos",
+        "prijs": "32.00",
+        "was": "32.00",
+        "minuten": 45
+       }
+      ]
+     },
+     {
+      "id": "TR4650589",
+      "naam": "Tratamiento facial antiedad con colágeno y ácido hialurónico",
+      "min_minuten": 45,
+      "max_minuten": 45,
+      "prijs_vanaf": "32.00",
+      "prijs_tot": "32.00",
+      "opties": [
+       {
+        "id": "8782226",
+        "naam": "Tratamiento facial antiedad con colágeno y ácido hialurónico",
+        "prijs": "32.00",
+        "was": "32.00",
+        "minuten": 45
+       }
+      ]
+     },
+     {
+      "id": "TR4650591",
+      "naam": "Tratamiento facial exfoliante",
+      "min_minuten": 45,
+      "max_minuten": 45,
+      "prijs_vanaf": "32.00",
+      "prijs_tot": "32.00",
+      "opties": [
+       {
+        "id": "8782228",
+        "naam": "45 minutos",
+        "prijs": "32.00",
+        "was": "32.00",
+        "minuten": 45
+       }
+      ]
+     },
+     {
+      "id": "TR4650590",
+      "naam": "Hombre - Limpieza facial",
+      "min_minuten": 45,
+      "max_minuten": 45,
+      "prijs_vanaf": "32.00",
+      "prijs_tot": "32.00",
+      "opties": [
+       {
+        "id": "8782227",
+        "naam": "45 minutos",
+        "prijs": "32.00",
+        "was": "32.00",
+        "minuten": 45
+       }
+      ]
+     },
+     {
+      "id": "TP4678907",
+      "naam": "cejas y labio",
+      "min_minuten": 15,
+      "max_minuten": 15,
+      "prijs_vanaf": "11.00",
+      "prijs_tot": "11.00",
+      "opties": [
+       {
+        "id": "8840652",
+        "naam": "cejas y labio",
+        "prijs": "11.00",
+        "was": "13.00",
+        "minuten": 15
+       }
+      ]
+     },
+     {
+      "id": "TR4678910",
+      "naam": "Mujer - Depilación facial con cera",
+      "min_minuten": 5,
+      "max_minuten": 20,
+      "prijs_vanaf": "4.00",
+      "prijs_tot": "11.00",
+      "opties": [
+       {
+        "id": "8840659",
+        "naam": "Labio superior",
+        "prijs": "4.00",
+        "was": "4.00",
+        "minuten": 5
+       },
+       {
+        "id": "8840660",
+        "naam": "Mentón",
+        "prijs": "4.00",
+        "was": "4.00",
+        "minuten": 10
+       },
+       {
+        "id": "9292195",
+        "naam": "Cara completa",
+        "prijs": "11.00",
+        "was": "11.00",
+        "minuten": 20
+       }
+      ]
+     },
+     {
+      "id": "TR4678911",
+      "naam": "Mujer - Depilación de cejas y labio superior con cera",
+      "min_minuten": 30,
+      "max_minuten": 30,
+      "prijs_vanaf": "11.00",
+      "prijs_tot": "11.00",
+      "opties": [
+       {
+        "id": "8840661",
+        "naam": "Mujer - Depilación de cejas y labio superior con cera",
+        "prijs": "11.00",
+        "was": "11.00",
+        "minuten": 30
+       }
+      ]
+     },
+     {
+      "id": "TR4682718",
+      "naam": "Mujer - Tinte de cejas",
+      "min_minuten": 15,
+      "max_minuten": 15,
+      "prijs_vanaf": "10.00",
+      "prijs_tot": "10.00",
+      "opties": [
+       {
+        "id": "8848948",
+        "naam": "15 minutos",
+        "prijs": "10.00",
+        "was": "10.00",
+        "minuten": 15
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "naam": "Depilación Corporal Con Cera",
+    "diensten": [
+     {
+      "id": "TR4570858",
+      "naam": "Depilación de piernas con cera",
+      "min_minuten": 10,
+      "max_minuten": 20,
+      "prijs_vanaf": "11.00",
+      "prijs_tot": "18.00",
+      "opties": [
+       {
+        "id": "8618163",
+        "naam": "Medias piernas",
+        "prijs": "11.00",
+        "was": "11.00",
+        "minuten": 10
+       },
+       {
+        "id": "8618164",
+        "naam": "Piernas completas",
+        "prijs": "18.00",
+        "was": "18.00",
+        "minuten": 20
+       }
+      ]
+     },
+     {
+      "id": "TR4570859",
+      "naam": "Depilación de brazos con cera",
+      "min_minuten": 10,
+      "max_minuten": 20,
+      "prijs_vanaf": "9.00",
+      "prijs_tot": "15.00",
+      "opties": [
+       {
+        "id": "8618166",
+        "naam": "Medios brazos",
+        "prijs": "9.00",
+        "was": "9.00",
+        "minuten": 10
+       },
+       {
+        "id": "8618165",
+        "naam": "Brazos completos",
+        "prijs": "15.00",
+        "was": "15.00",
+        "minuten": 20
+       }
+      ]
+     },
+     {
+      "id": "TR4586145",
+      "naam": "Mujer - Depilación de axilas con cera",
+      "min_minuten": 15,
+      "max_minuten": 15,
+      "prijs_vanaf": "6.00",
+      "prijs_tot": "6.00",
+      "opties": [
+       {
+        "id": "8650100",
+        "naam": "Mujer - Depilación de axilas con cera",
+        "prijs": "6.00",
+        "was": "6.00",
+        "minuten": 15
+       }
+      ]
+     },
+     {
+      "id": "TR4586146",
+      "naam": "Mujer - Depilación de brazos y axilas con cera",
+      "min_minuten": 40,
+      "max_minuten": 40,
+      "prijs_vanaf": "18.00",
+      "prijs_tot": "18.00",
+      "opties": [
+       {
+        "id": "8650101",
+        "naam": "Mujer - Depilación de brazos y axilas con cera",
+        "prijs": "18.00",
+        "was": "18.00",
+        "minuten": 40
+       }
+      ]
+     },
+     {
+      "id": "TR4650605",
+      "naam": "Mujer - Depilación de ingles",
+      "min_minuten": 20,
+      "max_minuten": 20,
+      "prijs_vanaf": "14.00",
+      "prijs_tot": "14.00",
+      "opties": [
+       {
+        "id": "8782252",
+        "naam": "Mujer - Depilación de ingles",
+        "prijs": "14.00",
+        "was": "14.00",
+        "minuten": 20
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "naam": "Cejas, Pestañas Y Extensiones",
+    "diensten": [
+     {
+      "id": "TR5710558",
+      "naam": "Mujer - Lifting de pestañas",
+      "min_minuten": 30,
+      "max_minuten": 30,
+      "prijs_vanaf": "35.00",
+      "prijs_tot": "35.00",
+      "opties": [
+       {
+        "id": "10898326",
+        "naam": "30 minutos",
+        "prijs": "35.00",
+        "was": "35.00",
+        "minuten": 30
+       }
+      ]
+     },
+     {
+      "id": "TR5710557",
+      "naam": "Mujer - Lifting y tinte de pestañas",
+      "min_minuten": 45,
+      "max_minuten": 45,
+      "prijs_vanaf": "45.00",
+      "prijs_tot": "45.00",
+      "opties": [
+       {
+        "id": "10898325",
+        "naam": "45 minutos",
+        "prijs": "45.00",
+        "was": "45.00",
+        "minuten": 45
+       }
+      ]
+     },
+     {
+      "id": "TR5710593",
+      "naam": "Mujer - Laminación de cejas",
+      "min_minuten": 20,
+      "max_minuten": 20,
+      "prijs_vanaf": "15.00",
+      "prijs_tot": "15.00",
+      "opties": [
+       {
+        "id": "10898365",
+        "naam": "Mujer - Laminación de cejas",
+        "prijs": "15.00",
+        "was": "15.00",
+        "minuten": 20
+       }
+      ]
+     },
+     {
+      "id": "TR5710592",
+      "naam": "Mujer - Tinte de cejas/pestañas",
+      "min_minuten": 15,
+      "max_minuten": 15,
+      "prijs_vanaf": "10.00",
+      "prijs_tot": "10.00",
+      "opties": [
+       {
+        "id": "10898364",
+        "naam": "15 minutos",
+        "prijs": "10.00",
+        "was": "10.00",
+        "minuten": 15
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "adres": {
+   "straat": "Carrer de Ramoneda 75",
+   "postcode": "08940",
+   "plaats": "Cornellà de Llobregat"
+  },
+  "geo": {
+   "lat": 41.3629905,
+   "lon": 2.0780683
+  },
+  "url": "https://www.treatwell.es/establecimiento/ungles-i-estetica/",
+  "reviews_url": "https://www.treatwell.es/establecimiento/ungles-i-estetica/#reviews"
+ }
+}
