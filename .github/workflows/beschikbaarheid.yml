@@ -1,0 +1,57 @@
+name: Beschikbaarheid verversen
+
+# Haalt de eerstvolgende vrije momenten op bij Treatwell, zodat de pagina "proxima cita libre"
+# kan tonen. Elke twee uur tijdens de openingstijden; buiten die uren verandert er toch niets.
+# Let op: GitHub schakelt geplande workflows automatisch uit na 60 dagen zonder activiteit in de
+# repository. Weer aanzetten: tabblad Actions > Beschikbaarheid verversen > Enable workflow.
+on:
+  schedule:
+    - cron: "7 7-19/2 * * *"   # elke 2 uur van 07:07 tot 19:07 UTC (08:07-20:07 in Barcelona)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: beschikbaarheid-verversen
+  cancel-in-progress: false
+
+jobs:
+  verversen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      # Exitcode ongelijk aan 0 = run mislukt (rood) en het oude bestand blijft staan.
+      - name: Beschikbaarheid ophalen bij Treatwell
+        id: beschikbaarheid
+        run: python tools/ververs_beschikbaarheid.py
+
+      - name: Wijzigingen committen naar main
+        if: ${{ steps.beschikbaarheid.outcome == 'success' }}
+        run: |
+          git add -- data/beschikbaarheid.json
+          if git diff --cached --quiet; then
+            echo "Geen wijzigingen."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Beschikbaarheid ververst vanaf Treatwell ($(date -u +%Y-%m-%dT%H:%MZ))" -- data/beschikbaarheid.json
+          for i in 1 2 3; do
+            if git pull --rebase origin main && git push origin HEAD:main; then
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            echo "Push-poging $i mislukt." >&2
+            sleep 5
+          done
+          echo "Push naar main mislukt na 3 pogingen" >&2
+          exit 1
