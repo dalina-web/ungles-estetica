@@ -1,0 +1,11 @@
+# Netlify-koppen. Media verandert niet meer na publicatie, de JSON-bestanden elke nacht.
+/media/*
+  Cache-Control: public, max-age=604800
+
+/data/*
+  Cache-Control: public, max-age=300
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
