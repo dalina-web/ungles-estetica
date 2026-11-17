@@ -1,5 +1,5 @@
 {
- "gecontroleerd": "2026-11-17T14:20+00:00",
+ "gecontroleerd": "2026-11-17T15:57+00:00",
  "toelichting": "Vrije starttijden volgens de agenda van Treatwell, opgevraagd met dezelfde aanroep als de tijdkiezer van de boekwidget. Per vestiging samengevoegd over de opgevraagde behandelingen; alleen de eerste dagen met plek.",
  "bron": "widget.treatwell.es/datetime-ui/api/availability",
  "sant-just": {
@@ -84,13 +84,6 @@
   ],
   "dagen": [
    {
-    "dag": "2026-11-17",
-    "tijden": [
-     "15:30",
-     "16:00"
-    ]
-   },
-   {
     "dag": "2026-11-18",
     "tijden": [
      "10:00",
@@ -133,6 +126,19 @@
     "dag": "2026-11-21",
     "tijden": [
      "13:35"
+    ]
+   },
+   {
+    "dag": "2026-11-23",
+    "tijden": [
+     "10:00",
+     "10:30",
+     "10:45",
+     "11:00",
+     "11:15",
+     "11:30",
+     "11:45",
+     "12:00"
     ]
    }
   ]
