@@ -1,0 +1,119 @@
+{
+ "hero": {
+  "mp4": "media/video/hero.mp4",
+  "poster": "media/video/hero.jpg",
+  "bron_id": "7355428119496363296",
+  "breedte": 720,
+  "hoogte": 1280
+ },
+ "videos": [
+  {
+   "id": "7354363473482042657",
+   "bron": "tiktok",
+   "url": "https://www.tiktok.com/@ungles_i_estetica/video/7354363473482042657",
+   "weergaven": 4556,
+   "mp4": "media/video/tiktok-7354363473482042657.mp4",
+   "poster": "media/video/tiktok-7354363473482042657.jpg",
+   "breedte": 576,
+   "hoogte": 1024,
+   "duur": 9.27,
+   "bytes": 813589
+  },
+  {
+   "id": "7355895675063766305",
+   "bron": "tiktok",
+   "url": "https://www.tiktok.com/@ungles_i_estetica/video/7355895675063766305",
+   "weergaven": 2194,
+   "mp4": "media/video/tiktok-7355895675063766305.mp4",
+   "poster": "media/video/tiktok-7355895675063766305.jpg",
+   "breedte": 576,
+   "hoogte": 1024,
+   "duur": 30.0,
+   "bytes": 2591545
+  },
+  {
+   "id": "7355797680490171681",
+   "bron": "tiktok",
+   "url": "https://www.tiktok.com/@ungles_i_estetica/video/7355797680490171681",
+   "weergaven": 1925,
+   "mp4": "media/video/tiktok-7355797680490171681.mp4",
+   "poster": "media/video/tiktok-7355797680490171681.jpg",
+   "breedte": 576,
+   "hoogte": 1024,
+   "duur": 30.2,
+   "bytes": 2381348
+  },
+  {
+   "id": "7355428119496363296",
+   "bron": "tiktok",
+   "url": "https://www.tiktok.com/@ungles_i_estetica/video/7355428119496363296",
+   "weergaven": 1716,
+   "mp4": "media/video/tiktok-7355428119496363296.mp4",
+   "poster": "media/video/tiktok-7355428119496363296.jpg",
+   "breedte": 720,
+   "hoogte": 1280,
+   "duur": 30.0,
+   "bytes": 2991277
+  },
+  {
+   "id": "7354308103212436769",
+   "bron": "tiktok",
+   "url": "https://www.tiktok.com/@ungles_i_estetica/video/7354308103212436769",
+   "weergaven": 1255,
+   "mp4": "media/video/tiktok-7354308103212436769.mp4",
+   "poster": "media/video/tiktok-7354308103212436769.jpg",
+   "breedte": 720,
+   "hoogte": 1280,
+   "duur": 24.27,
+   "bytes": 2379076
+  },
+  {
+   "id": "7358902905375624480",
+   "bron": "tiktok",
+   "url": "https://www.tiktok.com/@ungles_i_estetica/video/7358902905375624480",
+   "weergaven": 1065,
+   "mp4": "media/video/tiktok-7358902905375624480.mp4",
+   "poster": "media/video/tiktok-7358902905375624480.jpg",
+   "breedte": 720,
+   "hoogte": 1280,
+   "duur": 4.0,
+   "bytes": 311260
+  },
+  {
+   "id": "7479516932690087170",
+   "bron": "tiktok",
+   "url": "https://www.tiktok.com/@ungles_i_estetica/video/7479516932690087170",
+   "weergaven": 495,
+   "mp4": "media/video/tiktok-7479516932690087170.mp4",
+   "poster": "media/video/tiktok-7479516932690087170.jpg",
+   "breedte": 576,
+   "hoogte": 720,
+   "duur": 11.5,
+   "bytes": 516734
+  },
+  {
+   "id": "DcQv_EcoWnV",
+   "bron": "instagram",
+   "url": "https://www.instagram.com/ungles_i_estetica/reel/DcQv_EcoWnV/",
+   "weergaven": 494,
+   "mp4": "media/video/instagram-DcQv_EcoWnV.mp4",
+   "poster": "media/video/instagram-DcQv_EcoWnV.jpg",
+   "breedte": 720,
+   "hoogte": 1280,
+   "duur": 4.2,
+   "bytes": 517976
+  },
+  {
+   "id": "DcWK6zXo4VL",
+   "bron": "instagram",
+   "url": "https://www.instagram.com/ungles_i_estetica/reel/DcWK6zXo4VL/",
+   "weergaven": 172,
+   "mp4": "media/video/instagram-DcWK6zXo4VL.mp4",
+   "poster": "media/video/instagram-DcWK6zXo4VL.jpg",
+   "breedte": 720,
+   "hoogte": 1280,
+   "duur": 6.73,
+   "bytes": 994101
+  }
+ ]
+}
