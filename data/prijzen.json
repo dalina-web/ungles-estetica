@@ -107,6 +107,26 @@
         "was": "50.00",
         "minuten": 60
        }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Una oportunidad para sentarte, relajarte y cuidar de tus manos. Y con esmalte semipermanente, para no preocuparte por tu manicura durante mucho tiempo."
+       },
+       {
+        "type": "kop",
+        "tekst": "Incluye"
+       },
+       {
+        "type": "lijst",
+        "punten": [
+         "Retirada de esmalte normal anterior.",
+         "Corte y limado de uñas.",
+         "Tratamiento de cutículas.",
+         "Hidratación.",
+         "Esmalte semipermanente (color o francesa)."
+        ]
+       }
       ]
      },
      {
@@ -130,6 +150,23 @@
         "prijs": "10.00",
         "was": "10.00",
         "minuten": 15
+       }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Para retirar el esmalte semipermanente, confía en este equipo de profesionales. Lo harán con el máximo cuidado."
+       },
+       {
+        "type": "kop",
+        "tekst": "Incluye"
+       },
+       {
+        "type": "lijst",
+        "punten": [
+         "Corte y limado de uñas.",
+         "Hidratación."
+        ]
        }
       ]
      },
@@ -162,6 +199,26 @@
         "was": "35.00",
         "minuten": 60
        }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Todos los pasos que necesitas para cuidar tus manos están en la manicura completa. Haz que tus uñas estén hidratadas, fuertes y con un toque de color."
+       },
+       {
+        "type": "kop",
+        "tekst": "Incluye"
+       },
+       {
+        "type": "lijst",
+        "punten": [
+         "Retirada de esmalte normal anterior.",
+         "Corte y limado de uñas.",
+         "Tratamiento de cutículas.",
+         "Hidratación.",
+         "Esmalte normal (color o francesa)."
+        ]
+       }
       ]
      },
      {
@@ -193,6 +250,24 @@
         "was": "23.00",
         "minuten": 30
        }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Tener poco tiempo no tiene por qué impedir que te cuides. La manicura exprés hará que en poco minutos tus manos se vean cuidadas y tus uñas perfectas."
+       },
+       {
+        "type": "kop",
+        "tekst": "Incluye"
+       },
+       {
+        "type": "lijst",
+        "punten": [
+         "Retirada de esmalte normal anterior.",
+         "Corte y limado de uñas.",
+         "Esmalte normal (color o francesa)."
+        ]
+       }
       ]
      },
      {
@@ -216,6 +291,24 @@
         "prijs": "28.00",
         "was": "28.00",
         "minuten": 30
+       }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Una manicura compatible hasta con las agendas más apretadas, pero con un esmalte que dura más tiempo."
+       },
+       {
+        "type": "kop",
+        "tekst": "Incluye"
+       },
+       {
+        "type": "lijst",
+        "punten": [
+         "Retirada de esmalte normal anterior.",
+         "Corte y limado de uñas.",
+         "Esmalte semipermanente (color o francesa)."
+        ]
        }
       ]
      },
@@ -248,6 +341,25 @@
         "was": "40.00",
         "minuten": 60
        }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Cuidarte no solo incluye ir al gimnasio o llevar la barba arreglada. Las manos dicen mucho de ti, así que no está de más cuidarlas de vez en cuando."
+       },
+       {
+        "type": "kop",
+        "tekst": "Incluye"
+       },
+       {
+        "type": "lijst",
+        "punten": [
+         "Corte y limado de uñas.",
+         "Tratamiento de cutículas.",
+         "Hidratación.",
+         "No incluye esmalte."
+        ]
+       }
       ]
      },
      {
@@ -264,6 +376,12 @@
         "prijs": "95.00",
         "was": "95.00",
         "minuten": 130
+       }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Si desea unas uñas brillantes que no se desconchen y que duren más que su esmalte habitual, entonces la manicura de dos semanas es el tratamiento para usted. Usando una técnica revolucionaria que seca en cuestión de segundos con la luz UV, una manicura de dos semanas le dejará las uñas brillantes, fuertes y sin desconchados durante al menos dos semanas."
        }
       ]
      }
@@ -293,6 +411,28 @@
         "prijs": "60.00",
         "was": "60.00",
         "minuten": 60
+       }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Una pedicura para un cuidado a fondo y con esmaltado semipermanente, para sentarte y relajarte. Una puesta a punto para tus pies mientras cuidan de ti."
+       },
+       {
+        "type": "kop",
+        "tekst": "Incluye"
+       },
+       {
+        "type": "lijst",
+        "punten": [
+         "Retirada de esmalte normal anterior.",
+         "Corte y limado de uñas.",
+         "Tratamiento de cutículas y durezas.",
+         "Exfoliación.",
+         "Hidratación.",
+         "Masaje.",
+         "Esmalte semipermanente (color o francesa)."
+        ]
        }
       ]
      },
@@ -325,6 +465,24 @@
         "was": "28.00",
         "minuten": 20
        }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Siempre corriendo de arriba a abajo y no tienes tiempo para nada. ¡Ufff! Adivina quién lo sufre más: tus pies. Puedes dedicarles unos minutos para cuidarlos y tenerlos perfectos con esta pedicura exprés."
+       },
+       {
+        "type": "kop",
+        "tekst": "Incluye"
+       },
+       {
+        "type": "lijst",
+        "punten": [
+         "Retirada de esmalte normal anterior.",
+         "Corte y limado de uñas.",
+         "Esmalte normal (color o francesa)."
+        ]
+       }
       ]
      },
      {
@@ -348,6 +506,24 @@
         "prijs": "33.00",
         "was": "33.00",
         "minuten": 30
+       }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "La gran opción para las agendas más apretadas. Una pedicura duradera en el menor tiempo, para que el cuidado de tus no te robe demasiado tiempo."
+       },
+       {
+        "type": "kop",
+        "tekst": "Incluye"
+       },
+       {
+        "type": "lijst",
+        "punten": [
+         "Retirada de esmalte normal anterior.",
+         "Corte y limado de uñas.",
+         "Esmalte semipermanente (color o francesa)."
+        ]
        }
       ]
      },
@@ -373,6 +549,26 @@
         "was": "40.00",
         "minuten": 60
        }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Es hora de sacar a la luz esos pies. Déjate sorprender por esta pedicura completa y luce unos pies impecables."
+       },
+       {
+        "type": "kop",
+        "tekst": "Incluye"
+       },
+       {
+        "type": "lijst",
+        "punten": [
+         "Retirada de esmalte normal anterior.",
+         "Corte y limado de uñas.",
+         "Tratamiento de cutículas y durezas.",
+         "Hidratación.",
+         "Esmalte normal (color o francesa)."
+        ]
+       }
       ]
      },
      {
@@ -396,6 +592,26 @@
         "prijs": "55.00",
         "was": "55.00",
         "minuten": 60
+       }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Es hora de cuidar un poco de tus pies. Prueba con esta pedicura semipermanente completa y luce unos pies impecables por más tiempo."
+       },
+       {
+        "type": "kop",
+        "tekst": "Incluye"
+       },
+       {
+        "type": "lijst",
+        "punten": [
+         "Retirada de esmalte normal anterior.",
+         "Corte y limado de uñas.",
+         "Tratamiento de cutículas y durezas.",
+         "Hidratación.",
+         "Esmalte semipermanente (color o francesa)."
+        ]
        }
       ]
      },
@@ -427,6 +643,25 @@
         "prijs": "55.00",
         "was": "55.00",
         "minuten": 60
+       }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Ya es hora de prestar atención a esos pies y con esta pedicura masculina... ¡ya no hay excusas!"
+       },
+       {
+        "type": "kop",
+        "tekst": "Incluye"
+       },
+       {
+        "type": "lijst",
+        "punten": [
+         "Corte y limado de uñas.",
+         "Tratamiento de cutículas.",
+         "Hidratación.",
+         "No incluye esmalte."
+        ]
        }
       ]
      }
@@ -485,6 +720,27 @@
         "was": "65.00",
         "minuten": 90
        }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "¿Quieres una extensiones de uñas con efecto natural, fuertes, flexibles y con un acabado espectacular? Las uñas de gel son tu solución."
+       },
+       {
+        "type": "alinea",
+        "kop": "Aplicación",
+        "tekst": "incluye corte y limado de uñas, tratamiento de cutículas, exfoliación, hidratación, masaje y esmalte (color o francesa)."
+       },
+       {
+        "type": "alinea",
+        "kop": "Relleno",
+        "tekst": "incluye corte y limado de uñas, tratamiento de cutículas, exfoliación, hidratación, masaje y esmaltado (color o francesa)."
+       },
+       {
+        "type": "alinea",
+        "kop": "Retirada",
+        "tekst": "incluye corte y limado de uñas, tratamiento de cutículas, exfoliación, hidratación y masaje."
+       }
       ]
      }
     ]
@@ -514,6 +770,12 @@
         "was": "11.00",
         "minuten": 20
        }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "La forma más clásica y efectiva de conseguir unas cejas definidas y con la forma que más favorece a tus facciones."
+       }
       ]
      },
      {
@@ -530,6 +792,12 @@
         "prijs": "5.00",
         "was": "5.00",
         "minuten": 5
+       }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Si quieres lucir un rostro impecable y suave, está depilación de labio superior con cera es lo que estabas buscando."
        }
       ]
      }
@@ -560,6 +828,28 @@
         "was": "70.00",
         "minuten": 120
        }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "¿Manicura o pedicura? ¿Por qué no las dos? Aprovecha este servicio básico para dejar tus uñas listas y bien bonitas en una sola sesión."
+       },
+       {
+        "type": "alinea",
+        "tekst": "¡Tener poco tiempo ya no es excusa para cuidar tus manos!"
+       },
+       {
+        "type": "kop",
+        "tekst": "Incluye"
+       },
+       {
+        "type": "lijst",
+        "punten": [
+         "Retirada de esmalte normal anterior.",
+         "Corte y limado de uñas.",
+         "Esmalte normal (color o francesa)."
+        ]
+       }
       ]
      }
     ]
@@ -589,6 +879,20 @@
         "was": "35.00",
         "minuten": 30
        }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Con el lifting conseguirás alargar y elevar tus pestañas. Si tus pestañas caen rectas, con este tratamiento podrás elevarlas y darles una curvatura natural.  Paso a paso: "
+       },
+       {
+        "type": "lijst",
+        "punten": [
+         "Preparación de las pestañas.",
+         "Aplicación del producto. Se deja actuar durante unos minutos.",
+         "Retirada de la solución y limpieza."
+        ]
+       }
       ]
      },
      {
@@ -606,6 +910,20 @@
         "was": "30.00",
         "minuten": 30
        }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "¿Siempre has notado que tienes las cejas muy gruesas? Lúcelas de forma elegante y natural con la tecnología de la laminación."
+       },
+       {
+        "type": "alinea",
+        "tekst": "Esta técnica te permite restaurar los pelos debilitados para poder llevarlas con una bonita curva. Podrás corregir el contorno, consiguiendo una mirada más expresiva. Además, te podrás bañar en el mar, ir a la sauna y dormir tranquilamente, porque se mantendrá la forma que le has dado."
+       },
+       {
+        "type": "alinea",
+        "tekst": "¡Nada afectará la forma creada!"
+       }
       ]
      },
      {
@@ -622,6 +940,24 @@
         "prijs": "10.00",
         "was": "10.00",
         "minuten": 20
+       }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Un tinte como este te permite definir tus cejas y darle fuerza a tu mirada. Podrás olvidarte durante un tiempo de tener que maquillarlas."
+       },
+       {
+        "type": "kop",
+        "tekst": "Paso a paso"
+       },
+       {
+        "type": "lijst",
+        "punten": [
+         "Preparación y limpieza.",
+         "Aplicación del tinte. Se deja actuar durante unos minutos.",
+         "Retirada del producto."
+        ]
        }
       ]
      }
@@ -734,6 +1070,12 @@
         "was": "13.00",
         "minuten": 20
        }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Independientemente de que le gusten las uñas cortas y suaves, cuadradas, almendradas u ovaladas, la manicura se distingue por ser uno de los tratamientos de belleza más populares hoy en día entre las mujeres. Desde la manicura francesa hasta las uñas de gel, las acrílicas o las de parafina, una manicurista profesional pulirá sus uñas hasta la perfección, poniendo el toque final idóneo entre cientos de colores para combinar con cualquier prenda."
+       }
       ]
      },
      {
@@ -757,6 +1099,12 @@
         "prijs": "28.00",
         "was": "28.00",
         "minuten": 60
+       }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Incluye limpieza profunda de pieles, cutículas, diseño de forma adecuada, esmaltado con esmaltes semipermanente, con duración hasta 21 días. Servicios de regalo: diseños simple (duración 5 min)."
        }
       ]
      },
@@ -782,6 +1130,12 @@
         "was": "21.00",
         "minuten": 35
        }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Independientemente de que le gusten las uñas cortas y suaves, cuadradas, almendradas u ovaladas, la manicura se distingue por ser uno de los tratamientos de belleza más populares hoy en día entre las mujeres. Desde la manicura francesa hasta las uñas de gel, las acrílicas o las de parafina, una manicurista profesional pulirá sus uñas hasta la perfección, poniendo el toque final idóneo entre cientos de colores para combinar con cualquier prenda."
+       }
       ]
      },
      {
@@ -798,6 +1152,12 @@
         "prijs": "6.00",
         "was": "6.00",
         "minuten": 15
+       }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Independientemente de que le gusten las uñas cortas y suaves, cuadradas, almendradas u ovaladas, la manicura se distingue por ser uno de los tratamientos de belleza más populares hoy en día entre las mujeres. Desde la manicura francesa hasta las uñas de gel, las acrílicas o las de parafina, una manicurista profesional pulirá sus uñas hasta la perfección, poniendo el toque final idóneo entre cientos de colores para combinar con cualquier prenda."
        }
       ]
      },
@@ -823,6 +1183,12 @@
         "was": "18.00",
         "minuten": 45
        }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Si desea unas uñas brillantes que no se desconchen y que duren más que su esmalte habitual, entonces la manicura de dos semanas es el tratamiento para usted. Usando una técnica revolucionaria que seca en cuestión de segundos con la luz UV, una manicura de dos semanas le dejará las uñas brillantes, fuertes y sin desconchados durante al menos dos semanas."
+       }
       ]
      },
      {
@@ -839,6 +1205,12 @@
         "prijs": "28.00",
         "was": "28.00",
         "minuten": 60
+       }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Si desea unas uñas brillantes que no se desconchen y que duren más que su esmalte habitual, entonces la manicura de dos semanas es el tratamiento para usted. Usando una técnica revolucionaria que seca en cuestión de segundos con la luz UV, una manicura de dos semanas le dejará las uñas brillantes, fuertes y sin desconchados durante al menos dos semanas."
        }
       ]
      }
@@ -869,6 +1241,12 @@
         "was": "17.00",
         "minuten": 20
        }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Cortar la uña, limar, retirar esmalte (tradicional) anterior, empujar la cuticula."
+       }
       ]
      },
      {
@@ -885,6 +1263,12 @@
         "prijs": "33.00",
         "was": "33.00",
         "minuten": 60
+       }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "¿Desea tener unos pies perfectos durante dos semanas? Pruebe la pedicura de dos semanas: es igual que la pedicura habitual pero con un esmalte en gel más refinado que el esmalte normal. ¿El resultado? Unos dedos de los pies lustrosos y sin desconchados durante mucho más tiempo. ¡Un sueño hecho realidad!"
        }
       ]
      },
@@ -910,6 +1294,12 @@
         "was": "21.00",
         "minuten": 45
        }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Ideal para retirar las capas gruesas de células muertas, la pedicura le permitirá mimar sus pies manteniendo unas uñas en perfecto estado. De ahí saldrá con una piel lisa y saludable y unas uñas de los pies remodeladas y pintadas con una nota de color de su esmalte preferido."
+       }
       ]
      },
      {
@@ -926,6 +1316,12 @@
         "prijs": "21.00",
         "was": "21.00",
         "minuten": 30
+       }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "¿Desea tener unos pies perfectos durante dos semanas? Pruebe la pedicura de dos semanas: es igual que la pedicura habitual pero con un esmalte en gel más refinado que el esmalte normal. ¿El resultado? Unos dedos de los pies lustrosos y sin desconchados durante mucho más tiempo. ¡Un sueño hecho realidad!"
        }
       ]
      }
@@ -977,6 +1373,12 @@
         "was": "45.00",
         "minuten": 100
        }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "If you want glossy, chip free nails for up to 2 weeks then gel nails are for you. Often called Shellac or Biosculpture, a gel manicure uses a specially formulated type of polish and a UV lamp to create a long-lasting, high shine, nail effect."
+       }
       ]
      },
      {
@@ -993,6 +1395,12 @@
         "prijs": "3.00",
         "was": "3.00",
         "minuten": 10
+       }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "El esmalte de color es elegante pero puedes darle un toque diferente decorando tus uñas con algún detalle. Puedes escoger un diseño sencillo, algo más elaborado, elegante, divertido... ¡Tú eliges!"
        }
       ]
      }
@@ -1016,6 +1424,12 @@
         "was": "9.00",
         "minuten": 10
        }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "La forma más clásica y efectiva de conseguir unas cejas definidas y con la forma que más favorece a tus facciones."
+       }
       ]
      },
      {
@@ -1032,6 +1446,12 @@
         "prijs": "4.00",
         "was": "4.00",
         "minuten": 5
+       }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Si quieres lucir un rostro impecable y suave, está depilación de labio superior con cera es lo que estabas buscando."
        }
       ]
      },
@@ -1050,6 +1470,20 @@
         "was": "32.00",
         "minuten": 45
        }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "¿Quieres sentir tu rostro rejuvenecido?"
+       },
+       {
+        "type": "alinea",
+        "tekst": "Este tratamiento antiedad con colágeno aporta elasticidad a la piel y tiene un poder hidratante excelente, es perfecto para prevenir el envejecimiento del cutis y la aparición de manchas en la cara."
+       },
+       {
+        "type": "alinea",
+        "tekst": "¡Da la bienvenida a una piel radiante!"
+       }
       ]
      },
      {
@@ -1066,6 +1500,37 @@
         "prijs": "32.00",
         "was": "32.00",
         "minuten": 45
+       }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "¿Conoces los beneficios del colágeno y el ácido hialurónico para combatir los signos del envejecimiento?"
+       },
+       {
+        "type": "alinea",
+        "tekst": "Estos componentes tienen muchas propiedades ya que se encuentran en nuestro organismo de manera natural. Estas sustancias son necesarias para que los tejidos se regeneren y para aumentar la elasticidad de la piel. Con este tratamiento específico conseguirás una piel mucho más firme, luminosa y rejuvenecida."
+       },
+       {
+        "type": "alinea",
+        "tekst": "¡Compruébalo ya!"
+       },
+       {
+        "type": "kop",
+        "tekst": "Paso a paso"
+       },
+       {
+        "type": "lijst",
+        "punten": [
+         "Desmaquillado del rostro.",
+         "Aplicación de tónico.",
+         "Exfoliación.",
+         "Aplicación de vapor.",
+         "Extracción de impurezas.",
+         "Sérum.",
+         "Aplicación de mascarilla.",
+         "Masaje facial con crema."
+        ]
        }
       ]
      },
@@ -1084,6 +1549,37 @@
         "was": "32.00",
         "minuten": 45
        }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Muchas veces nuestra piel no se acostumbra bien a los cambios de temperatura, secándose y deshidratándose. Por eso, es importante cuidarla a fondo."
+       },
+       {
+        "type": "alinea",
+        "tekst": "Si deseas tener una piel suave y sin imperfecciones, tendrás que llevar un adecuado cuidado facial diario y de vez en cuando, recurrir a tratamientos como esta exfoliación. Eliminarás las células muertas de la piel y la mantendrás libre de impurezas."
+       },
+       {
+        "type": "alinea",
+        "tekst": "¡Disfruta de una piel totalmente renovada!"
+       },
+       {
+        "type": "kop",
+        "tekst": "Paso a paso"
+       },
+       {
+        "type": "lijst",
+        "punten": [
+         "Desmaquillado del rostro.",
+         "Aplicación de tónico.",
+         "Exfoliación.",
+         "Aplicación de vapor.",
+         "Extracción de impurezas.",
+         "Sérum.",
+         "Aplicación de mascarilla.",
+         "Masaje facial con crema."
+        ]
+       }
       ]
      },
      {
@@ -1101,6 +1597,42 @@
         "was": "32.00",
         "minuten": 45
        }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "¿Crees que tu rostro necesita una limpieza en profundidad?"
+       },
+       {
+        "type": "alinea",
+        "tekst": "Y es que no nos damos cuenta, pero la piel de la cara está siempre muy expuesta. Por eso, cuidarla no está de más. Una limpieza facial puede ser la solución para esas impurezas que tanto te molestan y conseguir así una textura suave y uniforme."
+       },
+       {
+        "type": "alinea",
+        "tekst": "¡Disfruta de una piel renovada!"
+       },
+       {
+        "type": "alinea",
+        "kop": "Beneficios",
+        "tekst": "elimina células muertas, retarda el envejecimiento e hidrata la piel."
+       },
+       {
+        "type": "kop",
+        "tekst": "Paso a paso"
+       },
+       {
+        "type": "lijst",
+        "punten": [
+         "Desmaquillado del rostro.",
+         "Aplicación de tónico.",
+         "Exfoliación.",
+         "Aplicación de vapor.",
+         "Extracción de impurezas.",
+         "Sérum.",
+         "Aplicación de mascarilla.",
+         "Masaje facial con crema."
+        ]
+       }
       ]
      },
      {
@@ -1117,6 +1649,12 @@
         "prijs": "11.00",
         "was": "13.00",
         "minuten": 15
+       }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Rápida, suave y duradera, la depilación de cejas con cera es una gran manera de definir la forma de sus cejas naturales. Un tratamiento probado y demostrado que ofrecen muchos salones de belleza, la depilación de cejas con cera está disponible a menudo sin cita previa, por lo que tener unas cejas bonitas nunca antes había sido tan fácil."
        }
       ]
      },
@@ -1149,6 +1687,12 @@
         "was": "11.00",
         "minuten": 20
        }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Si quieres lucir un rostro impecable y suave, decídete por esta depilación facial con cera."
+       }
       ]
      },
      {
@@ -1166,6 +1710,12 @@
         "was": "11.00",
         "minuten": 30
        }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "La forma más clásica y efectiva de conseguir unas cejas definidas y un labio superior libre de vello."
+       }
       ]
      },
      {
@@ -1182,6 +1732,24 @@
         "prijs": "10.00",
         "was": "10.00",
         "minuten": 15
+       }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Un tinte como este te permite definir tus cejas y darle fuerza a tu mirada. Podrás olvidarte durante un tiempo de tener que maquillarlas."
+       },
+       {
+        "type": "kop",
+        "tekst": "Paso a paso"
+       },
+       {
+        "type": "lijst",
+        "punten": [
+         "Preparación y limpieza.",
+         "Aplicación del tinte. Se deja actuar durante unos minutos.",
+         "Retirada del producto."
+        ]
        }
       ]
      }
@@ -1212,6 +1780,20 @@
         "was": "18.00",
         "minuten": 20
        }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Si está cansada de afeitarte las piernas cada dos por tres, ¡la depilación con cera es la gran alternativa!"
+       },
+       {
+        "type": "alinea",
+        "tekst": "Esta técnica ampliamente probada, que arranca el pelo de raíz directamente, es ideal para olvidarse de las piernas con vello. ¡Ha llegado el momento de despedirse de la maquinilla y pasar a la depilación con cera!"
+       },
+       {
+        "type": "alinea",
+        "tekst": "¡Prepárate para lucir unas piernas suaves y sedosas!"
+       }
       ]
      },
      {
@@ -1236,6 +1818,16 @@
         "was": "15.00",
         "minuten": 20
        }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "¿Te has olvidado de tus brazos?"
+       },
+       {
+        "type": "alinea",
+        "tekst": "De vez en cuando necesitan también su turno de depilación. Con este servicio, un equipo profesional se encargará de que te olvides del vello por un tiempo con una depilación con cera."
+       }
       ]
      },
      {
@@ -1252,6 +1844,20 @@
         "prijs": "6.00",
         "was": "6.00",
         "minuten": 15
+       }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "¿Quieres sacar partido a todo tu armario sin preocuparte por el vello?"
+       },
+       {
+        "type": "alinea",
+        "tekst": "Las axilas suelen ser una de las zonas de nuestro cuerpo con más vello: si eso te molesta, no dudes en hacerte esta depilación con cera."
+       },
+       {
+        "type": "alinea",
+        "tekst": "¡Ponle remedio ya!"
        }
       ]
      },
@@ -1270,6 +1876,20 @@
         "was": "18.00",
         "minuten": 40
        }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "¿Quieres olvidarte del molesto vello en los brazos y las axilas?"
+       },
+       {
+        "type": "alinea",
+        "tekst": "La zona superior de tu cuerpo también merece atención. Puedes conseguir la suavidad que buscas con esta depilación para brazos y axilas con cera."
+       },
+       {
+        "type": "alinea",
+        "tekst": "¡Ponle remedio ya!"
+       }
       ]
      },
      {
@@ -1286,6 +1906,20 @@
         "prijs": "14.00",
         "was": "14.00",
         "minuten": 20
+       }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "¿Quieres sacar partido a todo tu armario sin preocuparte por el vello?"
+       },
+       {
+        "type": "alinea",
+        "tekst": "Las axilas suelen ser una de las zonas de nuestro cuerpo con más vello: si eso te molesta, no dudes en hacerte esta depilación con cera."
+       },
+       {
+        "type": "alinea",
+        "tekst": "¡Ponle remedio ya!"
        }
       ]
      }
@@ -1309,6 +1943,24 @@
         "was": "35.00",
         "minuten": 30
        }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Con el lifting conseguirás alargar y elevar tus pestañas. Si tus pestañas caen rectas, con este tratamiento podrás elevarlas y darles una curvatura natural."
+       },
+       {
+        "type": "kop",
+        "tekst": "Paso a paso"
+       },
+       {
+        "type": "lijst",
+        "punten": [
+         "Preparación de las pestañas.",
+         "Aplicación del producto. Se deja actuar durante unos minutos.",
+         "Retirada de la solución y limpieza."
+        ]
+       }
       ]
      },
      {
@@ -1325,6 +1977,24 @@
         "prijs": "45.00",
         "was": "45.00",
         "minuten": 45
+       }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Con el lifting conseguirás alargar y elevar tus pestañas y con el tinte les darás un toque de color, como si llevarás la máscara de pestañas siempre puesta. Aquí tienes la respuesta para resaltar tu mirada."
+       },
+       {
+        "type": "kop",
+        "tekst": "Paso a paso"
+       },
+       {
+        "type": "lijst",
+        "punten": [
+         "Preparación de las pestañas.",
+         "Aplicación del producto. Se deja actuar durante unos minutos.",
+         "Retirada y limpieza."
+        ]
        }
       ]
      },
@@ -1343,6 +2013,20 @@
         "was": "15.00",
         "minuten": 20
        }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "¿Siempre has notado que tienes las cejas muy gruesas? Lúcelas de forma elegante y natural con la tecnología de la laminación."
+       },
+       {
+        "type": "alinea",
+        "tekst": "Esta técnica te permite restaurar los pelos debilitados para poder llevarlas con una bonita curva. Podrás corregir el contorno, consiguiendo una mirada más expresiva. Además, te podrás bañar en el mar, ir a la sauna y dormir tranquilamente, porque se mantendrá la forma que le has dado."
+       },
+       {
+        "type": "alinea",
+        "tekst": "¡Nada afectará la forma creada!"
+       }
       ]
      },
      {
@@ -1359,6 +2043,24 @@
         "prijs": "10.00",
         "was": "10.00",
         "minuten": 15
+       }
+      ],
+      "omschrijving": [
+       {
+        "type": "alinea",
+        "tekst": "Un tinte como este te permite definir tus cejas y darle fuerza a tu mirada. Podrás olvidarte durante un tiempo de tener que maquillarlas."
+       },
+       {
+        "type": "kop",
+        "tekst": "Paso a paso"
+       },
+       {
+        "type": "lijst",
+        "punten": [
+         "Preparación y limpieza.",
+         "Aplicación del tinte. Se deja actuar durante unos minutos.",
+         "Retirada del producto."
+        ]
        }
       ]
      }

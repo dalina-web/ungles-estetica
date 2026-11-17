@@ -9,7 +9,7 @@ resultaat veel kleiner dan het bestaande bestand (minder dan 70% van de prijsreg
 dan blijft het oude bestand ongemoeid en eindigt het script met exitcode 1 en een melding op stderr.
 Exitcode 0 = gelukt, met of zonder wijzigingen. Alleen de standaardbibliotheek.
 """
-import json, os, re, sys, urllib.request
+import html, json, os, re, sys, urllib.request
 from pathlib import Path
 
 VESTIGINGEN = {
@@ -57,6 +57,43 @@ def adres(loc):
     return {k: v for k, v in uit.items() if v}
 
 
+VET = re.compile(r"'''(.+?)'''", re.S)
+
+
+def omschrijving(ruw):
+    """Zet de omschrijving van Treatwell om in blokken: alinea, kop of lijst.
+
+    Treatwell levert losse tekst met HTML-entiteiten (u&ntilde;as), vette koppen
+    tussen drie apostrofs ('''Incluye:''') en opsommingen met een sterretje.
+    De tekst zelf wordt niet herschreven of ingekort.
+    """
+    if not ruw or not str(ruw).strip():
+        return None
+    tekst = re.sub(r"<[^>]+>", "", html.unescape(str(ruw)).replace("\r", ""))
+    blokken = []
+    for regel in (r.strip() for r in tekst.split("\n")):
+        if not regel:
+            continue
+        if regel.startswith("*"):
+            punt = VET.sub(lambda m: m.group(1), regel.lstrip("* ").strip())
+            if not punt:
+                continue
+            if blokken and blokken[-1]["type"] == "lijst":
+                blokken[-1]["punten"].append(punt)
+            else:
+                blokken.append({"type": "lijst", "punten": [punt]})
+            continue
+        m = VET.match(regel)
+        if m:
+            kop = m.group(1).strip().rstrip(":").strip()
+            rest = VET.sub(lambda x: x.group(1), regel[m.end():].strip())
+            blokken.append({"type": "alinea", "kop": kop, "tekst": rest} if rest
+                           else {"type": "kop", "tekst": kop})
+            continue
+        blokken.append({"type": "alinea", "tekst": VET.sub(lambda m2: m2.group(1), regel)})
+    return blokken or None
+
+
 def vestiging(state, slug):
     try:
         v = state["venue"]["venue"]
@@ -74,14 +111,18 @@ def vestiging(state, slug):
                         if o.get("durationMinutes") is not None:
                             optie["minuten"] = o["durationMinutes"]
                         opties.append(optie)
-                items.append({
+                item = {
                     "id": d["id"], "naam": d["name"],
                     "min_minuten": d["durationRange"]["minDurationMinutes"],
                     "max_minuten": d["durationRange"]["maxDurationMinutes"],
                     "prijs_vanaf": d["priceRange"]["minSalePriceAmount"],
                     "prijs_tot": d["priceRange"]["maxSalePriceAmount"],
                     "opties": opties,
-                })
+                }
+                blokken = omschrijving(d.get("description"))
+                if blokken:
+                    item["omschrijving"] = blokken
+                items.append(item)
             groepen.append({"naam": g["name"], "diensten": items})
         uit = {"venue_id": v["id"], "naam": v["name"], "beoordeling": v.get("rating"),
                "openingstijden": v.get("openingHours"), "groepen": groepen}
