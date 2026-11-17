@@ -145,6 +145,21 @@ nav.main a:hover{color:var(--accent)}
 .opt-act{grid-column:1/-1;display:flex;gap:8px;justify-content:flex-end}
 .opt-act .btn-dark{flex:1;max-width:220px}
 .menu-note{color:var(--muted);font-size:.8rem;text-align:center;margin-top:18px}
+.svc-info{border-top:1px dashed var(--border);margin-top:2px}
+.svc-info summary{cursor:pointer;color:var(--accent);font-size:.82rem;font-weight:600;padding:10px 2px;list-style:none}
+.svc-info summary::-webkit-details-marker{display:none}
+.svc-info summary::before{content:'+';display:inline-block;width:14px;font-weight:700}
+.svc-info[open] summary::before{content:'–'}
+.svc-info summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+.svc-info .info{color:var(--muted);font-size:.88rem;padding:0 2px 14px;display:grid;gap:8px}
+.svc-info .info p{margin:0}
+.svc-info .info b{color:var(--text)}
+.svc-info .info ul{margin:0;padding-left:18px;display:grid;gap:4px}
+.svc-info .info .kop{color:var(--text);font-weight:600}
+.next-slot{display:flex;align-items:center;gap:7px;font-size:.84rem;color:var(--gold-text);background:var(--sand);border-radius:8px;padding:8px 10px}
+.next-slot b{color:var(--text);font-weight:600}
+.next-slot::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--wa);flex:none}
+.choice .next-slot{margin-top:2px}
 .menu-all{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:22px}
 .menu-all .btn-line{white-space:normal;max-width:100%;text-align:center;padding:10px 18px;border-radius:22px;line-height:1.3}
 .state{text-align:center;color:var(--muted);padding:30px 0}
@@ -510,6 +525,8 @@ const translations = {
     see_menu: "Ver servicios y precios", full_menu: "Ver toda la carta de {v} en Treatwell",
     from: "desde", u_min: "min", u_h: "h", offer: "Oferta", was_price: "Precio anterior", now_price: "Precio actual",
     prices_note: "Precios según Treatwell.", loading: "Cargando…",
+    what_included: "¿Qué incluye?",
+    next_slot: "Próxima cita libre: {s}", slot_today: "hoy", slot_tomorrow: "mañana", slot_at: "{d} a las {t}",
     load_error: "No se han podido cargar los precios. Consulta la carta en Treatwell.",
     wa_book: "Reservar por WhatsApp",
     wa_msg_service: "Hola, me gustaría reservar: {s} ({v}).",
@@ -542,6 +559,8 @@ const translations = {
     see_menu: "Consulta serveis i preus", full_menu: "Consulta tota la carta de {v} a Treatwell",
     from: "des de", u_min: "min", u_h: "h", offer: "Oferta", was_price: "Preu anterior", now_price: "Preu actual",
     prices_note: "Preus segons Treatwell.", loading: "Carregant…",
+    what_included: "Què inclou?",
+    next_slot: "Propera cita lliure: {s}", slot_today: "avui", slot_tomorrow: "demà", slot_at: "{d} a les {t}",
     load_error: "No s'han pogut carregar els preus. Consulta la carta a Treatwell.",
     wa_book: "Reserva per WhatsApp",
     wa_msg_service: "Hola, m'agradaria demanar hora per a: {s} ({v}).",
@@ -574,6 +593,8 @@ const translations = {
     see_menu: "See services and prices", full_menu: "See the full {v} menu on Treatwell",
     from: "from", u_min: "min", u_h: "h", offer: "Offer", was_price: "Previous price", now_price: "Current price",
     prices_note: "Prices as listed on Treatwell.", loading: "Loading…",
+    what_included: "What's included?",
+    next_slot: "Next free appointment: {s}", slot_today: "today", slot_tomorrow: "tomorrow", slot_at: "{d} at {t}",
     load_error: "Prices could not be loaded. See the menu on Treatwell.",
     wa_book: "Book via WhatsApp",
     wa_msg_service: "Hello, I'd like to book: {s} ({v}).",
@@ -606,6 +627,8 @@ const translations = {
     see_menu: "Переглянути послуги та ціни", full_menu: "Усі послуги салону {v} на Treatwell",
     from: "від", u_min: "хв", u_h: "год", offer: "Акція", was_price: "Попередня ціна", now_price: "Поточна ціна",
     prices_note: "Ціни згідно з Treatwell.", loading: "Завантаження…",
+    what_included: "Що входить?",
+    next_slot: "Найближчий вільний час: {s}", slot_today: "сьогодні", slot_tomorrow: "завтра", slot_at: "{d} у {t}",
     load_error: "Не вдалося завантажити ціни. Перегляньте перелік послуг на Treatwell.",
     wa_book: "Записатися через WhatsApp",
     wa_msg_service: "Добрий день! Хочу записатися: {s} ({v}).",
@@ -634,7 +657,7 @@ const qs = new URLSearchParams(location.search);
 const own = (o, k) => !!k && Object.prototype.hasOwnProperty.call(o, k);
 let lang = [qs.get('lang'), store.get('lang')].find(l => own(translations, l)) || 'es';
 let salon = [qs.get('salon'), store.get('salon')].find(s => own(SALONS, s)) || null;
-let PRICES = null, REVIEWS = null, priceError = false, cat = 0;
+let PRICES = null, REVIEWS = null, AVAIL = null, priceError = false, cat = 0;
 
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -652,7 +675,10 @@ const rating = k => PRICES && PRICES[k] && PRICES[k].beoordeling;
 const num = (v, d) => new Intl.NumberFormat(LOCALES[lang], { minimumFractionDigits: d, maximumFractionDigits: d }).format(v);
 
 /* ---------- Enlaces de reserva ---------- */
-const widgetMenu = k => 'https://widget.treatwell.es/establecimiento/' + SALONS[k].slug + '/';
+// La carta completa existe en inglés; la pantalla de un servicio concreto solo en español.
+const widgetMenu = k => lang === 'en'
+  ? 'https://widget.treatwell.es/en/place/' + SALONS[k].slug + '/'
+  : 'https://widget.treatwell.es/establecimiento/' + SALONS[k].slug + '/';
 const widgetService = (k, itemId, optId) => 'https://widget.treatwell.es/availability?venueId=' + PRICES[k].venue_id +
   '&proposedServices=' + encodeURIComponent(JSON.stringify([{ menuItemId: String(itemId), optionIds: [String(optId)] }]));
 const venueUrl = k => (PRICES && PRICES[k] && PRICES[k].url) || 'https://www.treatwell.es/establecimiento/' + SALONS[k].slug + '/';
@@ -704,6 +730,48 @@ function priceHtml(o){
   return '<span class="price">' + money(now) + '</span>';
 }
 
+/* ---------- Qué incluye (texto de Treatwell, tal cual) ---------- */
+function infoHtml(d){
+  const blokken = d.omschrijving;
+  if (!blokken || !blokken.length) return '';
+  const body = blokken.map(b =>
+    b.type === 'lijst' ? '<ul>' + (b.punten || []).map(p => '<li>' + esc(p) + '</li>').join('') + '</ul>' :
+    b.type === 'kop' ? '<p class="kop">' + esc(b.tekst) + '</p>' :
+    '<p>' + (b.kop ? '<b>' + esc(b.kop) + ':</b> ' : '') + esc(b.tekst || '') + '</p>').join('');
+  if (!body) return '';
+  return '<details class="svc-info"><summary>' + esc(t('what_included')) + '</summary>' +
+    '<div class="info" lang="es">' + body + '</div></details>';
+}
+
+/* ---------- Primera hora libre (agenda de Treatwell, se refresca cada 2 h) ---------- */
+function madridNow(){
+  const p = {};
+  new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Madrid', year: 'numeric', month: '2-digit',
+    day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false })
+    .formatToParts(new Date()).forEach(x => { p[x.type] = x.value; });
+  return { dag: p.year + '-' + p.month + '-' + p.day, tijd: (p.hour === '24' ? '00' : p.hour) + ':' + p.minute };
+}
+function nextSlot(k){
+  const dagen = (AVAIL && AVAIL[k] && AVAIL[k].dagen) || [];
+  const now = madridNow();
+  for (const d of dagen) {
+    if (!d || !d.dag || d.dag < now.dag) continue;
+    const tijden = (d.tijden || []).filter(x => d.dag > now.dag || x > now.tijd);
+    if (tijden.length) return { dag: d.dag, tijd: tijden[0] };
+  }
+  return null;
+}
+function slotHtml(k){
+  const s = nextSlot(k);
+  if (!s) return '';
+  const vandaag = madridNow().dag;
+  const morgen = new Date(Date.parse(vandaag + 'T12:00:00Z') + 864e5).toISOString().slice(0, 10);
+  const dag = s.dag === vandaag ? t('slot_today') : s.dag === morgen ? t('slot_tomorrow')
+    : new Date(s.dag + 'T12:00:00Z').toLocaleDateString(LOCALES[lang], { weekday: 'long', day: 'numeric', month: 'long', timeZone: 'UTC' });
+  const deel = t('next_slot', { s: '\u0000' }).split('\u0000');
+  return '<p class="next-slot">' + esc(deel[0]) + '<b>' + esc(t('slot_at', { d: dag, t: s.tijd })) + '</b>' + esc(deel[1] || '') + '</p>';
+}
+
 function renderMenu(){
   const pick = $('#pick'), cats = $('#cats'), menu = $('#menu'), state = $('#menuState'), all = $('#menuAll');
   if (priceError) {
@@ -738,7 +806,7 @@ function renderMenu(){
         '<button class="btn btn-dark btn-sm" data-book="service" data-item="' + esc(d.id) + '" data-opt="' + esc(o.id) + '" data-name="' + esc(full) + '" aria-label="' + esc(t('book') + ': ' + full) + '">' + esc(t('book')) + '</button></span></div>';
     }).join('');
     return '<article class="svc"><div class="svc-head"><h3><span lang="es">' + esc(d.naam) + '</span>' + (sale ? '<span class="tag">' + esc(t('offer')) + '</span>' : '') + '</h3>' +
-      (single ? '' : '<span class="dur">' + dur(d.min_minuten, d.max_minuten) + '</span>') + '</div>' + rows + '</article>';
+      (single ? '' : '<span class="dur">' + dur(d.min_minuten, d.max_minuten) + '</span>') + '</div>' + rows + infoHtml(d) + '</article>';
   }).join('');
   all.hidden = false;
   all.innerHTML = '<button class="btn btn-line btn-sm" data-book="menu" data-salon-book="' + salon + '">' + esc(t('full_menu', { v: SALONS[salon].name })) + '</button>' + waBtn(salon, null, true);
@@ -798,6 +866,7 @@ function renderSalons(){
     return '<article class="salon"><h3>' + esc(s.name) + '</h3>' +
       '<address>' + esc(a.street) + '<br>' + esc(a.zip) + ' ' + esc(a.city) + '<br><a href="tel:+' + s.wa + '">' + esc(s.phone) + '</a> · <a href="' + esc(map) + '" target="_blank" rel="noopener">' + esc(t('directions')) + ' →</a></address>' +
       (rows ? '<table class="hours"><caption>' + esc(t('hours')) + '</caption><tbody>' + rows + '</tbody></table>' : '') +
+      slotHtml(k) +
       '<div class="salon-act"><button class="btn btn-dark" data-book="menu" data-salon-book="' + k + '">' + esc(t('book_online')) + '</button>' + waBtn(k, null, true) + '</div></article>';
   }).join('');
 }
@@ -807,6 +876,7 @@ function renderChooser(){
     const a = addr(k), r = rating(k);
     return '<div class="choice"><strong>' + esc(SALONS[k].name) + '</strong><span>' + esc(a.street) + ', ' + esc(a.city) +
       (r && r.count ? ' · ★ ' + num(r.average, 1) + ' (' + r.count + ')' : '') + '</span>' +
+      slotHtml(k) +
       '<div class="row"><button class="btn btn-dark btn-sm" data-book="menu" data-salon-book="' + k + '">' + esc(t('book_online')) + '</button>' + waBtn(k, null, true) + '</div></div>';
   }).join('');
 }
@@ -971,6 +1041,7 @@ getJson('data/prijzen.json').then(d => {
   PRICES = d; renderAll(); renderJsonLd();
 }).catch(err => { console.error(err); priceError = true; renderMenu(); });
 getJson('data/reviews.json').then(d => { REVIEWS = d; renderReviews(); }).catch(() => {});
+getJson('data/beschikbaarheid.json').then(d => { AVAIL = d; renderSalons(); renderChooser(); }).catch(() => {});
 getJson('data/videos.json').then(d => { renderVideos(d); startHero(d); }).catch(() => { renderVideos(null); startHero(null); });
 </script>
 </body>
