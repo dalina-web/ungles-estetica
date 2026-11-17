@@ -1,660 +1,978 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ungles i Estètica | Salones de Belleza</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-color: #faf9f6;
-            --text-color: #1a1a1a;
-            --accent-color: #7b2d39;
-            --accent-light: #f4e8eb;
-            --card-bg: #ffffff;
-            --border-color: #e5e2db;
-            --gold: #c5a059;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ungles i Estètica | Manicura ucraniana en Sant Just Desvern y Cornellà</title>
+<meta name="description" content="Manicura ucraniana y estética en Sant Just Desvern y Cornellà de Llobregat. Esterilización 100%, sin daños, sin prisas. Consulta precios y reserva online.">
+<link rel="canonical" href="https://ungles-estetica.netlify.app/">
+<link rel="alternate" hreflang="es" href="https://ungles-estetica.netlify.app/">
+<link rel="alternate" hreflang="ca" href="https://ungles-estetica.netlify.app/?lang=ca">
+<link rel="alternate" hreflang="en" href="https://ungles-estetica.netlify.app/?lang=en">
+<link rel="alternate" hreflang="uk" href="https://ungles-estetica.netlify.app/?lang=uk">
+<link rel="alternate" hreflang="x-default" href="https://ungles-estetica.netlify.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ungles i Estètica">
+<meta property="og:url" content="https://ungles-estetica.netlify.app/">
+<meta property="og:title" content="Ungles i Estètica | Manicura ucraniana en Sant Just Desvern y Cornellà">
+<meta property="og:description" content="Manicura ucraniana y estética en Sant Just Desvern y Cornellà de Llobregat. Esterilización 100%, sin daños, sin prisas. Consulta precios y reserva online.">
+<meta property="og:image" content="https://ungles-estetica.netlify.app/media/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="ca_ES">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:locale:alternate" content="uk_UA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1a1a1a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231a1a1a'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' text-anchor='middle' fill='%23c5a059'%3EU%3C/text%3E%3C/svg%3E">
+<link rel="preload" as="image" href="media/video/hero.jpg">
+<link rel="stylesheet" href="media/fonts/fonts.css">
+<style>
+:root{
+  --bg:#faf9f6; --text:#1a1a1a; --muted:#6b6660; --accent:#7b2d39; --accent-light:#f4e8eb;
+  --card:#fff; --border:#e5e2db; --gold:#c5a059; --gold-text:#8a6a2c; --sand:#f0eee9; --wa:#1a7f45;
+  --serif:'Playfair Display',Georgia,'Times New Roman',serif;
+  --sans:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  --wrap:1120px; --radius:10px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.6;font-size:16px;overflow-x:hidden}
+body.locked{overflow:hidden}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.15}
+[hidden]{display:none!important}
+:focus-visible{outline:2px solid #1a1a1a;outline-offset:2px;box-shadow:0 0 0 4px #fff}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:10px 14px;z-index:300}
+.skip:focus{left:8px;top:8px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+section{scroll-margin-top:70px}
+.eyebrow{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-text);font-weight:600}
+.hero .eyebrow{color:var(--gold)}
+.sec{padding:64px 0}
+.sec-head{text-align:center;margin-bottom:32px}
+.sec-head h2{font-size:clamp(1.8rem,5vw,2.6rem);margin-top:8px}
+.sec-head p{color:var(--muted);margin-top:10px;font-size:.95rem}
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            scroll-behavior: smooth;
-        }
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 22px;border-radius:999px;border:1px solid transparent;text-decoration:none;font-weight:600;font-size:.92rem;letter-spacing:.02em;transition:background .25s,color .25s,border-color .25s,transform .25s;white-space:nowrap}
+.btn-dark{background:var(--text);color:#fff}
+.btn-dark:hover{background:var(--accent)}
+.btn-gold{background:var(--gold);color:#1a1a1a}
+.btn-gold:hover{background:#d3b06c}
+.btn-line{border-color:var(--text);background:transparent}
+.btn-line:hover{background:var(--text);color:#fff}
+.btn-wa{background:#fff;border-color:var(--border);color:var(--wa)}
+.btn-wa:hover{border-color:var(--wa);background:#f1faf4}
+.btn-wa svg,.btn svg{width:18px;height:18px;flex:none}
+.btn-sm{min-height:40px;padding:0 16px;font-size:.85rem}
+.btn-icon{width:40px;min-height:40px;padding:0}
 
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
+/* Top bar + header */
+.top-bar{background:#1a1a1a;color:#d9d5cd;font-size:.74rem;letter-spacing:.06em}
+.top-bar .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:38px}
+.top-bar span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lang-switcher{display:flex;gap:4px;flex:none;margin-left:auto}
+.lang-btn{position:relative;background:transparent;border:1px solid rgba(255,255,255,.28);color:#fff;min-width:36px;height:26px;border-radius:4px;font-size:.7rem;font-weight:500;transition:all .25s}
+.lang-btn::after{content:"";position:absolute;inset:-7px -2px}
+.lang-btn.active,.lang-btn:hover{background:var(--gold);border-color:var(--gold);color:#1a1a1a;font-weight:600}
+header.site{position:sticky;top:0;z-index:100;background:rgba(250,249,246,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:62px}
+.logo{font-family:var(--serif);font-size:1rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;text-decoration:none;border:1.5px solid var(--text);padding:6px 12px;white-space:nowrap}
+nav.main{display:none;gap:26px}
+nav.main a{text-decoration:none;font-size:.88rem;font-weight:500;transition:color .25s}
+nav.main a:hover{color:var(--accent)}
 
-        /* Top Bar & Language Selector */
-        .top-bar {
-            background: #1a1a1a;
-            color: #fff;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 0.85rem;
-        }
+/* Hero */
+.hero{position:relative;min-height:calc(100svh - 100px);display:flex;align-items:flex-end;color:#fff;background:#1a1a1a;overflow:hidden}
+.hero-media{position:absolute;inset:0}
+.hero-media video,.hero-media img{width:100%;height:100%;object-fit:cover}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,14,.1) 0%,rgba(20,16,14,.2) 30%,rgba(20,16,14,.72) 52%,rgba(20,16,14,.9) 100%)}
+.hero-inner{position:relative;z-index:1;width:100%;padding:36px 20px 40px;max-width:640px}
+.hero h1{font-size:clamp(2.1rem,8.5vw,3.6rem);margin:10px 0 12px}
+.hero h1 em{font-style:italic}
+.hero-sub{font-size:1rem;color:rgba(255,255,255,.88);max-width:34em}
+.hero-rating{display:flex;flex-wrap:wrap;gap:8px 22px;margin:22px 0 24px;min-height:48px}
+.rate{display:flex;flex-direction:column;gap:2px;text-decoration:none;font-size:.8rem;color:rgba(255,255,255,.85)}
+.rate b{font-weight:600;color:#fff}
+.rate-line{display:flex;align-items:center;gap:8px}
+.rate-num{font-family:var(--serif);font-size:1.25rem;color:#fff}
+.stars{position:relative;display:inline-block;width:86px;height:16px;flex:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23cfc9bd' fill-opacity='.55' d='M10 1.6l2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.8 1-5.9L1.5 7.8l5.9-.8z'/%3E%3C/svg%3E") 0 0/17.2px 16px repeat-x}
+.stars i{position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23c5a059' d='M10 1.6l2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 15l-5.2 2.8 1-5.9L1.5 7.8l5.9-.8z'/%3E%3C/svg%3E") 0 0/17.2px 16px repeat-x}
+.hero-cta{display:flex;flex-wrap:wrap;gap:10px}
+.hero-cta .btn{min-height:52px;padding:0 30px;font-size:1rem}
+.hero-cta .btn-ghost{border-color:rgba(255,255,255,.6);color:#fff;background:transparent}
+.hero-cta .btn-ghost:hover{background:#fff;color:#1a1a1a}
+.hero-pause{position:absolute;right:14px;top:14px;z-index:2;width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.55);background:rgba(20,16,14,.35);color:#fff;font-size:.7rem;display:grid;place-items:center}
 
-        .lang-switcher {
-            display: flex;
-            gap: 8px;
-        }
+.usp{background:#1a1a1a;color:#e9e5dc;border-top:1px solid rgba(255,255,255,.1)}
+.usp ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 16px;padding:18px 0;font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;text-align:center}
+.usp li::before{content:"";display:block;width:18px;height:1px;background:var(--gold);margin:0 auto 8px}
 
-        .lang-btn {
-            background: transparent;
-            border: 1px solid rgba(255,255,255,0.3);
-            color: #fff;
-            padding: 3px 8px;
-            cursor: pointer;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            transition: all 0.3s;
-        }
+/* Salon picker (tabs) */
+.salon-tabs{display:flex;justify-content:center;gap:0;background:#fff;border:1px solid var(--border);border-radius:999px;padding:4px;max-width:440px;margin:0 auto}
+.salon-tabs button{flex:1;border:0;background:transparent;border-radius:999px;min-height:44px;padding:0 14px;font-weight:600;font-size:.88rem;transition:all .25s}
+.salon-tabs button[aria-pressed="true"]{background:var(--text);color:#fff}
+.pick{display:grid;gap:14px;max-width:720px;margin:26px auto 0}
+.pick button{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:22px;text-align:left;display:grid;gap:4px;transition:border-color .25s,transform .25s,box-shadow .25s}
+.pick button:hover{border-color:var(--gold);transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,0,0,.06)}
+.pick strong{font-family:var(--serif);font-weight:400;font-size:1.35rem}
+.pick span{color:var(--muted);font-size:.88rem}
+.pick .go{color:var(--accent);font-weight:600;font-size:.85rem;margin-top:8px}
 
-        .lang-btn.active, .lang-btn:hover {
-            background: var(--gold);
-            border-color: var(--gold);
-            color: #1a1a1a;
-            font-weight: 600;
-        }
+/* Price list */
+.cats{display:flex;gap:8px;overflow-x:auto;padding:22px 20px 6px;margin:0 -20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.cats::-webkit-scrollbar{display:none}
+.cats button{flex:none;border:1px solid var(--border);background:#fff;border-radius:999px;min-height:40px;padding:0 16px;font-size:.84rem;font-weight:500;transition:all .25s}
+.cats button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.menu{margin-top:18px;display:grid;gap:14px}
+.svc{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:18px 18px 8px}
+.svc-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-bottom:12px;border-bottom:1px solid var(--border)}
+.svc-head h3{font-size:1.18rem}
+.svc-head .dur{color:var(--muted);font-size:.8rem;white-space:nowrap}
+.opt{display:grid;grid-template-columns:1fr auto;gap:6px 12px;align-items:center;padding:12px 0;border-bottom:1px dashed var(--border)}
+.opt:last-child{border-bottom:0}
+.opt-name{font-size:.95rem}
+.opt-name small{display:block;color:var(--muted);font-size:.78rem}
+.price{font-weight:600;font-size:1rem;white-space:nowrap;text-align:right}
+.price s{color:var(--muted);font-weight:400;font-size:.85rem;margin-right:6px}
+.price .now{color:var(--accent)}
+.tag{display:inline-block;background:var(--accent-light);color:var(--accent);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;border-radius:4px;padding:2px 7px;margin-left:8px;vertical-align:middle}
+.opt-act{grid-column:1/-1;display:flex;gap:8px;justify-content:flex-end}
+.opt-act .btn-dark{flex:1;max-width:220px}
+.menu-note{color:var(--muted);font-size:.8rem;text-align:center;margin-top:18px}
+.menu-all{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:22px}
+.menu-all .btn-line{white-space:normal;max-width:100%;text-align:center;padding:10px 18px;border-radius:22px;line-height:1.3}
+.state{text-align:center;color:var(--muted);padding:30px 0}
 
-        /* Header */
-        header {
-            background: var(--bg-color);
-            border-bottom: 1px solid var(--border-color);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+/* Work */
+.sec-alt{background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.reel{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 20px 14px;margin:0 -20px;scrollbar-width:none}
+.reel::-webkit-scrollbar{display:none}
+.clip{position:relative;flex:none;width:62vw;max-width:260px;aspect-ratio:9/16;border-radius:var(--radius);overflow:hidden;background:#1a1a1a center/cover no-repeat;scroll-snap-align:center;border:0;padding:0}
+.clip video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.clip .play{position:absolute;left:50%;top:50%;width:54px;height:54px;margin:-27px 0 0 -27px;border-radius:50%;background:rgba(255,255,255,.9);display:grid;place-items:center;transition:opacity .3s}
+.clip .play::before{content:"";border-left:16px solid #1a1a1a;border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:4px}
+.clip.playing .play{opacity:0}
+.photos{columns:2;column-gap:10px;margin-top:26px}
+.photos img{width:100%;height:auto;border-radius:var(--radius);margin-bottom:10px;break-inside:avoid;background:var(--border)}
+.social{display:flex;gap:10px;justify-content:center;margin-top:24px;flex-wrap:wrap}
 
-        .logo-box {
-            border: 1.5px solid var(--text-color);
-            padding: 8px 15px;
-            text-align: center;
-        }
+/* Reviews */
+.score{display:flex;flex-direction:column;align-items:center;gap:6px;margin:26px 0 8px}
+.score-num{font-family:var(--serif);font-size:3.4rem;line-height:1}
+.score .stars{width:120px;height:22px;background-size:24px 22px}
+.score .stars i{background-size:24px 22px}
+.score small{color:var(--muted);font-size:.85rem}
+.dims{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:center;color:var(--muted);font-size:.82rem;margin-bottom:22px}
+.dims b{color:var(--text);font-weight:600}
+.quotes{display:grid;gap:14px}
+.quote{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:22px;display:flex;flex-direction:column;gap:12px}
+.quote .stars{width:86px}
+.quote blockquote{font-family:var(--serif);font-size:1.05rem;line-height:1.5;font-style:italic}
+.quote-by{margin-top:auto;font-size:.82rem;color:var(--muted)}
+.quote-by b{color:var(--text);font-weight:600}
+.center{text-align:center;margin-top:24px}
 
-        .logo-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.1rem;
-            letter-spacing: 1.5px;
-            font-weight: 600;
-            text-transform: uppercase;
-        }
+/* Salons */
+.sec-sand{background:var(--sand)}
+.salons{display:grid;gap:18px}
+.salon{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:26px 22px;display:flex;flex-direction:column;gap:16px}
+.salon h3{font-size:1.6rem}
+.salon address{font-style:normal;color:var(--muted);font-size:.95rem}
+.salon address a{color:var(--accent);font-weight:600;font-size:.85rem;text-decoration:none;display:inline-block;margin-top:6px}
+.hours{width:100%;border-collapse:collapse;font-size:.9rem}
+.hours caption{text-align:left;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-text);font-weight:600;padding-bottom:8px}
+.hours td{padding:5px 0;border-bottom:1px solid var(--border)}
+.hours td:last-child{text-align:right;white-space:nowrap}
+.hours tr.today td{font-weight:600}
+.hours .closed{color:var(--muted)}
+.salon-act{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto}
+.salon-act .btn{flex:1}
 
-        nav {
-            display: flex;
-            gap: 20px;
-        }
+/* About */
+.about{display:grid;gap:26px;align-items:center}
+.about img{width:100%;max-width:340px;aspect-ratio:4/5;object-fit:cover;object-position:top center;border-radius:var(--radius);margin:0 auto}
+.about h2{font-size:clamp(1.7rem,5vw,2.3rem);margin:8px 0 14px}
+.about p{color:#4d4944;margin-bottom:12px}
 
-        nav a {
-            text-decoration: none;
-            color: var(--text-color);
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
+/* Footer */
+footer.site{background:#1a1a1a;color:#a8a39a;text-align:center;padding:44px 20px 96px;font-size:.86rem}
+footer.site .logo{color:#fff;border-color:#fff;display:inline-block;margin-bottom:18px}
+footer.site a{color:#fff;text-decoration:none}
+footer.site a:hover{color:var(--gold)}
+.foot-links{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
 
-        nav a:hover {
-            color: var(--accent-color);
-        }
+/* Sticky mobile bar */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:90;display:flex;gap:8px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(250,249,246,.96);backdrop-filter:blur(10px);border-top:1px solid var(--border);transform:translateY(110%);visibility:hidden;transition:transform .35s,visibility .35s}
+.dock.show{transform:none;visibility:visible}
+@media(max-width:899px){html{scroll-padding-bottom:80px}}
+@media(max-width:599px){.top-bar span{white-space:normal;line-height:1.3;padding:6px 0}}
+.dock .btn{flex:1}
+.dock .btn-wa{flex:none}
 
-        /* Hero Section */
-        .hero {
-            padding: 60px 20px;
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-        }
+/* Dialogs */
+.modal{position:fixed;inset:0;z-index:200;display:flex;align-items:flex-end;justify-content:center;background:rgba(20,16,14,.6);opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s}
+.modal.open{opacity:1;visibility:visible}
+.sheet{background:var(--bg);width:100%;max-width:520px;border-radius:16px 16px 0 0;padding:22px 20px calc(24px + env(safe-area-inset-bottom));transform:translateY(24px);transition:transform .25s;max-height:92svh;overflow:auto}
+.modal.open .sheet{transform:none}
+.sheet-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}
+.sheet-head h2{font-size:1.5rem}
+.x{flex:none;width:40px;height:40px;border-radius:50%;border:1px solid var(--border);background:#fff;font-size:1.3rem;line-height:1;display:grid;place-items:center}
+.x:hover{border-color:var(--text)}
+.choice{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:16px;margin-top:12px}
+.choice strong{font-family:var(--serif);font-weight:400;font-size:1.25rem;display:block}
+.choice span{display:block;color:var(--muted);font-size:.85rem}
+.choice .row{display:flex;gap:8px;margin-top:12px}
+.choice .row .btn-dark{flex:1}
+.booker{background:#fff;width:100%;height:100svh;display:flex;flex-direction:column;transform:translateY(24px);transition:transform .25s}
+.modal.open .booker{transform:none}
+.booker-head{display:flex;align-items:center;gap:10px;padding:10px 12px 10px 16px;border-bottom:1px solid var(--border);background:var(--bg)}
+.booker-head div{flex:1;min-width:0}
+.booker-head h2{font-size:1.05rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.booker-head a{font-size:.75rem;color:var(--muted)}
+.booker-body{position:relative;flex:1;min-height:0}
+.booker iframe{width:100%;height:100%;border:0;display:block;background:#fff}
+.loader{position:absolute;inset:0;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;color:var(--muted);font-size:.9rem;text-align:center;padding:20px;transition:opacity .4s}
+.loader.mini{inset:auto 0 18px 0;background:none;pointer-events:none;padding:0}
+.loader.mini span{display:none}
+.loader.mini .spin{width:34px;height:34px;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.18)}
+.loader.done{opacity:0;pointer-events:none}
+.spin{width:42px;height:42px;border-radius:50%;border:3px solid var(--border);border-top-color:var(--gold);animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
 
-        .hero h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-            color: var(--text-color);
-        }
-
-        .hero p {
-            font-size: 1.1rem;
-            color: #555;
-            margin-bottom: 30px;
-        }
-
-        .badges {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 12px;
-            margin-bottom: 40px;
-        }
-
-        .badge {
-            background: var(--accent-light);
-            color: var(--accent-color);
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-        }
-
-        /* About Alina Section */
-        .about-section {
-            background: #fff;
-            border-top: 1px solid var(--border-color);
-            border-bottom: 1px solid var(--border-color);
-            padding: 60px 20px;
-        }
-
-        .about-container {
-            max-width: 1000px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            align-items: center;
-        }
-
-        .about-image img {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            object-fit: cover;
-            object-position: top center;
-            max-height: 500px;
-        }
-
-        .about-text h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-
-        .about-text p {
-            color: #555;
-            margin-bottom: 15px;
-            line-height: 1.7;
-        }
-
-        /* Services */
-        .services-section {
-            max-width: 1000px;
-            margin: 60px auto;
-            padding: 0 20px;
-        }
-
-        .section-title {
-            text-align: center;
-            font-family: 'Playfair Display', serif;
-            font-size: 2.2rem;
-            margin-bottom: 40px;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-
-        .service-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            padding: 30px;
-            border-radius: 8px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-        }
-
-        .service-card h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.3rem;
-            margin-bottom: 12px;
-            color: var(--accent-color);
-        }
-
-        .service-card p {
-            color: #666;
-            font-size: 0.95rem;
-        }
-
-        /* Salons & Booking Section */
-        .salons-section {
-            background: #f0eee9;
-            padding: 60px 20px;
-            margin-top: 60px;
-        }
-
-        .salons-grid {
-            max-width: 1000px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
-        }
-
-        .salon-card {
-            background: #fff;
-            padding: 35px;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .salon-card h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-        }
-
-        .salon-card p {
-            color: #555;
-            margin-bottom: 20px;
-            font-size: 0.95rem;
-        }
-
-        .btn-group {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .btn {
-            display: inline-block;
-            text-align: center;
-            padding: 12px 20px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: all 0.3s;
-        }
-
-        .btn-primary {
-            background: var(--text-color);
-            color: #fff;
-        }
-
-        .btn-primary:hover {
-            background: var(--accent-color);
-        }
-
-        .btn-whatsapp {
-            background: #25d366;
-            color: #fff;
-        }
-
-        .btn-whatsapp:hover {
-            background: #1ebd5b;
-        }
-
-        /* Gallery */
-        .gallery-section {
-            max-width: 1000px;
-            margin: 60px auto;
-            padding: 0 20px;
-        }
-
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 15px;
-        }
-
-        .gallery-item {
-            position: relative;
-            border-radius: 8px;
-            overflow: hidden;
-            height: 280px;
-            background: #e5e2db;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s;
-        }
-
-        .gallery-item:hover img {
-            transform: scale(1.05);
-        }
-
-        /* Footer */
-        footer {
-            background: #1a1a1a;
-            color: #aaa;
-            text-align: center;
-            padding: 40px 20px;
-            font-size: 0.9rem;
-        }
-
-        .footer-avatar {
-            width: 65px;
-            height: 65px;
-            border-radius: 50%;
-            object-fit: cover;
-            object-position: top center;
-            border: 2px solid var(--gold);
-            margin-bottom: 15px;
-        }
-
-        footer p {
-            margin-bottom: 10px;
-        }
-
-        footer a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        @media(max-width: 768px) {
-            .about-container {
-                grid-template-columns: 1fr;
-            }
-            nav {
-                display: none;
-            }
-        }
-    </style>
+@media(min-width:600px){
+  .pick{grid-template-columns:1fr 1fr}
+  .quotes{grid-template-columns:1fr 1fr}
+  .photos{columns:3}
+  .usp ul{grid-template-columns:repeat(4,1fr)}
+  .opt{grid-template-columns:1fr auto auto}
+  .opt-act{grid-column:auto}
+  .opt-act .btn-dark{flex:none}
+  .modal{align-items:center;padding:20px}
+  .sheet{border-radius:16px}
+  .booker{max-width:560px;height:min(92svh,900px);border-radius:14px;overflow:hidden}
+}
+@media(min-width:900px){
+  .sec{padding:92px 0}
+  nav.main{display:flex}
+  .hero{min-height:min(calc(100svh - 100px),820px);align-items:center;background:var(--bg);color:var(--text)}
+  .hero-media{left:auto;width:46%;}
+  .hero-media::after{background:linear-gradient(90deg,var(--bg) 0%,rgba(250,249,246,0) 14%)}
+  .hero-inner{max-width:var(--wrap);margin:0 auto;padding:60px 20px}
+  .hero-inner>*{max-width:min(520px,calc(54vw - 44px))}
+  .hero .eyebrow{color:var(--gold-text)}
+  .hero h1{font-size:clamp(3rem,4.6vw,4.4rem)}
+  .hero-sub{color:var(--muted);font-size:1.1rem}
+  .rate{color:var(--muted)} .rate b,.rate-num{color:var(--text)}
+  .hero-cta .btn-gold{background:var(--text);color:#fff}
+  .hero-cta .btn-gold:hover{background:var(--accent)}
+  .hero-cta .btn-ghost{border-color:var(--text);color:var(--text)}
+  .hero-cta .btn-ghost:hover{background:var(--text);color:#fff}
+  .menu{grid-template-columns:1fr 1fr;align-items:start}
+  .cats{justify-content:center;flex-wrap:wrap;overflow:visible}
+  .reel{display:grid;grid-template-columns:repeat(5,1fr);overflow:visible;margin:0;padding:0}
+  .clip{width:auto;max-width:none}
+  .photos{columns:4}
+  .quotes{grid-template-columns:repeat(3,1fr)}
+  .salons{grid-template-columns:1fr 1fr}
+  .salon{padding:36px}
+  .about{grid-template-columns:340px 1fr;gap:56px;max-width:900px;margin:0 auto}
+  .dock{display:none}
+  footer.site{padding-bottom:44px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation-duration:.01s!important}
+  .spin{animation:spin 1.6s linear infinite!important}
+}
+</style>
 </head>
-<body>
+<body id="top">
+<a class="skip" href="#services" data-i18n="skip">Saltar al contenido</a>
 
-    <!-- Top Bar with Language Selector -->
-    <div class="top-bar">
-        <span>✨ Manicura Ucraniana & Estética en Barcelona</span>
-        <div class="lang-switcher">
-            <button class="lang-btn active" onclick="setLang('es', this)">ES</button>
-            <button class="lang-btn" onclick="setLang('ca', this)">CA</button>
-            <button class="lang-btn" onclick="setLang('en', this)">EN</button>
-            <button class="lang-btn" onclick="setLang('uk', this)">UK</button>
-        </div>
+<div class="top-bar">
+  <div class="wrap">
+    <span data-i18n="tagline">Manicura ucraniana y estética en Barcelona</span>
+    <div class="lang-switcher" role="group" aria-label="Idioma" data-i18n-aria="lang_switch">
+      <button class="lang-btn active" data-lang="es" lang="es" aria-label="Español" onclick="setLang('es', this)">ES</button>
+      <button class="lang-btn" data-lang="ca" lang="ca" aria-label="Català" onclick="setLang('ca', this)">CA</button>
+      <button class="lang-btn" data-lang="en" lang="en" aria-label="English" onclick="setLang('en', this)">EN</button>
+      <button class="lang-btn" data-lang="uk" lang="uk" aria-label="Українська" onclick="setLang('uk', this)">UK</button>
     </div>
+  </div>
+</div>
 
-    <!-- Header -->
-    <header>
-        <div class="logo-box">
-            <div class="logo-title">Ungles i Estètica</div>
-        </div>
-        <nav>
-            <a href="#about" data-i18n="nav_about">Sobre mí</a>
-            <a href="#services" data-i18n="nav_services">Servicios</a>
-            <a href="#salons" data-i18n="nav_salons">Salones y Citas</a>
-            <a href="#gallery" data-i18n="nav_gallery">Trabajos</a>
-        </nav>
-    </header>
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="#top">Ungles i Estètica</a>
+    <nav class="main" aria-label="Principal" data-i18n-aria="nav_main">
+      <a href="#services" data-i18n="nav_services">Servicios y precios</a>
+      <a href="#work" data-i18n="nav_work">Trabajos</a>
+      <a href="#reviews" data-i18n="nav_reviews">Opiniones</a>
+      <a href="#salons" data-i18n="nav_salons">Salones</a>
+      <a href="#about" data-i18n="nav_about">Sobre mí</a>
+    </nav>
+    <button class="btn btn-dark btn-sm" data-book="choose" data-i18n="book">Reservar</button>
+  </div>
+</header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1 data-i18n="hero_title">Uñas perfectas y estética impecable</h1>
-        <p data-i18n="hero_subtitle">Esterilización 100%, técnica ucraniana y un espacio de confianza sin prisas.</p>
-        <div class="badges">
-            <span class="badge" data-i18n="badge_1">💅 Manicura Ucraniana</span>
-            <span class="badge" data-i18n="badge_2">🛡️ Esterilización 100%</span>
-            <span class="badge" data-i18n="badge_3">✨ Sin daños, sin prisas</span>
-            <span class="badge" data-i18n="badge_4">🌿 Uñas perfectas hasta 4 semanas</span>
-        </div>
-        <a href="#salons" class="btn btn-primary" style="padding: 15px 30px; font-size: 1rem;" data-i18n="btn_book">Reservar Cita</a>
-    </section>
+<main>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-media">
+    <video id="heroVideo" muted loop playsinline preload="none" poster="media/video/hero.jpg" aria-hidden="true" tabindex="-1"></video>
+    <button class="hero-pause" id="heroPause" type="button" aria-pressed="false" aria-label="Pausar vídeo" data-i18n-aria="pause_video" hidden>❚❚</button>
+  </div>
+  <div class="hero-inner">
+    <p class="eyebrow">Sant Just Desvern · Cornellà de Llobregat</p>
+    <h1 id="hero-title" data-i18n="hero_title">Uñas perfectas y estética impecable</h1>
+    <p class="hero-sub" data-i18n="hero_subtitle">Esterilización 100%, técnica ucraniana y un espacio de confianza sin prisas.</p>
+    <div class="hero-rating" id="heroRating"></div>
+    <div class="hero-cta">
+      <button class="btn btn-gold" data-book="choose" data-i18n="book">Reservar</button>
+      <a class="btn btn-ghost" href="#services" data-i18n="see_prices">Ver precios</a>
+    </div>
+  </div>
+</section>
 
-    <!-- About Alina Section -->
-    <section id="about" class="about-section">
-        <div class="about-container">
-            <div class="about-image">
-                <!-- Сохраните ваше фото под именем alina.jpg рядом с файлом index.html -->
-                <img src="alina.jpg" alt="Alina - Fundadora de Ungles i Estètica">
-            </div>
-            <div class="about-text">
-                <h2 data-i18n="about_title">Hola, soy Alina 👋✨</h2>
-                <p data-i18n="about_desc1">Llevo más de 15 años dedicada al mundo de belleza. En todo este tiempo, mi prioridad siempre ha sido la misma: ofrecerte un espacio de confianza, con la máxima calidad y los mejores cuidados para potenciar tu belleza natural.</p>
-                <p data-i18n="about_desc2">Para mí, un salón de belleza no es solo un lugar donde venimos a arreglarnos, sino un refugio para consentirnos, mimarnos y salir con la autoestima por las nubes.</p>
-            </div>
-        </div>
-    </section>
+<div class="usp">
+  <div class="wrap">
+    <ul>
+      <li data-i18n="badge_1">Manicura ucraniana</li>
+      <li data-i18n="badge_2">Esterilización 100%</li>
+      <li data-i18n="badge_3">Sin daños, sin prisas</li>
+      <li data-i18n="badge_4">Uñas perfectas hasta 4 semanas</li>
+    </ul>
+  </div>
+</div>
 
-    <!-- Services Section -->
-    <section id="services" class="services-section">
-        <h2 class="section-title" data-i18n="services_main_title">Nuestros Servicios</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <h3 data-i18n="serv_1_title">Manicura Ucraniana</h3>
-                <p data-i18n="serv_1_desc">Técnica avanzada de manicura combinada/rusa para un acabado ultra limpio, cutículas perfectas y durabilidad de hasta 4 semanas.</p>
-            </div>
-            <div class="service-card">
-                <h3 data-i18n="serv_2_title">Pedicura SPA</h3>
-                <p data-i18n="serv_2_desc">Cuidado profesional de pies con aparatología y cosmética de alta calidad para suavidad y salud duradera.</p>
-            </div>
-            <div class="service-card">
-                <h3 data-i18n="serv_3_title">Diseño y Cejas</h3>
-                <p data-i18n="serv_3_desc">Diseño de cejas, corrección profesional, laminado y coloración para enmarcar tu mirada de forma natural.</p>
-            </div>
-            <div class="service-card">
-                <h3 data-i18n="serv_4_title">Lifting de Pestañas</h3>
-                <p data-i18n="serv_4_desc">Curvatura elegante, nutrición con keratina y tinte para realzar tus pestañas naturales sin dañarlas.</p>
-            </div>
-            <div class="service-card">
-                <h3 data-i18n="serv_5_title">Uñas de Gel y Semipermanente</h3>
-                <p data-i18n="serv_5_desc">Amplia paleta de colores, refuerzo de base y construcciones impecables con materiales seguros.</p>
-            </div>
-            <div class="service-card">
-                <h3 data-i18n="serv_6_title">Retirada y Cuidado</h3>
-                <p data-i18n="serv_6_desc">Retirada cuidadosa de material anterior y tratamientos de fortalecimiento y nutrición profunda.</p>
-            </div>
-        </div>
-    </section>
+<section id="services" class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow" data-i18n="services_eyebrow">Carta</p>
+      <h2 id="services-title" data-i18n="services_title">Servicios y precios</h2>
+      <p data-i18n="choose_hint">Elige tu salón: los precios son distintos en cada uno.</p>
+    </div>
+    <div class="salon-tabs" role="group" data-salon-tabs aria-label="Elige tu salón" data-i18n-aria="choose_salon"></div>
+    <div id="pick" class="pick" hidden></div>
+    <div id="cats" class="cats" role="group" aria-labelledby="services-title" hidden></div>
+    <div id="menu" class="menu"></div>
+    <p id="menuState" class="state" role="status" data-i18n="loading">Cargando…</p>
+    <div id="menuAll" class="menu-all" hidden></div>
+    <p class="menu-note" data-i18n="prices_note">Precios según Treatwell.</p>
+  </div>
+</section>
 
-    <!-- Salons & Booking Section -->
-    <section id="salons" class="salons-section">
-        <h2 class="section-title" data-i18n="salons_main_title">Nuestros Salones</h2>
-        <div class="salons-grid">
-            <!-- Salon 1 -->
-            <div class="salon-card">
-                <div>
-                    <h3>Sant Just Desvern</h3>
-                    <p>📍 <strong>C/ Bonavista 75</strong><br>Sant Just Desvern</p>
-                    <p data-i18n="salon_text">Reserva tu cita en línea a través de Treatwell o contáctanos por WhatsApp para cualquier consulta.</p>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.treatwell.es/en/place/ungles-i-estetica-sant-just-desvern/?campaign_id=shared_link&campaign_platform=ios&partner_id=504791&campaign_medium=Pasteboard" target="_blank" class="btn btn-primary" data-i18n="btn_treatwell">Reservar en Treatwell</a>
-                    <a href="https://wa.me/34614465681" target="_blank" class="btn btn-whatsapp">WhatsApp / Tel: 614 465 681</a>
-                </div>
-            </div>
+<section id="work" class="sec sec-alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow" data-i18n="work_eyebrow">Galería</p>
+      <h2 data-i18n="gallery_title">Nuestros Trabajos</h2>
+    </div>
+    <div id="reel" class="reel"></div>
+    <div class="photos">
+      <img src="media/foto/work1.jpg" width="900" height="1200" loading="lazy" decoding="async" alt="" data-i18n-alt="photo_alt">
+      <img src="media/foto/work9.jpg" width="900" height="1126" loading="lazy" decoding="async" alt="" data-i18n-alt="photo_alt">
+      <img src="media/foto/work6.jpg" width="900" height="1200" loading="lazy" decoding="async" alt="" data-i18n-alt="photo_alt">
+      <img src="media/foto/work4.jpg" width="900" height="1052" loading="lazy" decoding="async" alt="" data-i18n-alt="photo_alt">
+      <img src="media/foto/work8.jpg" width="900" height="1184" loading="lazy" decoding="async" alt="" data-i18n-alt="photo_alt">
+      <img src="media/foto/work2.jpg" width="900" height="1126" loading="lazy" decoding="async" alt="" data-i18n-alt="photo_alt">
+      <img src="media/foto/work7.jpg" width="900" height="1200" loading="lazy" decoding="async" alt="" data-i18n-alt="photo_alt">
+      <img src="media/foto/work3.jpg" width="900" height="1200" loading="lazy" decoding="async" alt="" data-i18n-alt="photo_alt">
+    </div>
+    <div class="social">
+      <a class="btn btn-line btn-sm" href="https://www.instagram.com/ungles_i_estetica/" target="_blank" rel="noopener">Instagram</a>
+      <a class="btn btn-line btn-sm" href="https://www.tiktok.com/@ungles_i_estetica" target="_blank" rel="noopener">TikTok</a>
+    </div>
+  </div>
+</section>
 
-            <!-- Salon 2 -->
-            <div class="salon-card">
-                <div>
-                    <h3>Cornellà de Llobregat</h3>
-                    <p>📍 <strong>C/ Ramoneda 75</strong><br>Cornellà de Llobregat</p>
-                    <p data-i18n="salon_text">Reserva tu cita en línea a través de Treatwell o contáctanos por WhatsApp para cualquier consulta.</p>
-                </div>
-                <div class="btn-group">
-                    <a href="https://www.treatwell.es/en/place/ungles-i-estetica/?campaign_id=shared_link&campaign_platform=ios&partner_id=431611&campaign_medium=Pasteboard" target="_blank" class="btn btn-primary" data-i18n="btn_treatwell">Reservar en Treatwell</a>
-                    <a href="https://wa.me/34614397997" target="_blank" class="btn btn-whatsapp">WhatsApp / Tel: 614 397 997</a>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="reviews" class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Treatwell</p>
+      <h2 data-i18n="reviews_title">Opiniones</h2>
+    </div>
+    <div class="salon-tabs" role="group" data-salon-tabs aria-label="Elige tu salón" data-i18n-aria="choose_salon"></div>
+    <div id="reviewsBody"></div>
+  </div>
+</section>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery-section">
-        <h2 class="section-title" data-i18n="gallery_title">Nuestros Trabajos</h2>
-        <div class="gallery-grid">
-            <!-- Положите фото ваших работ рядом с файлом index.html под именами work1.jpg, work2.jpg, work3.jpg, work4.jpg -->
-            <div class="gallery-item"><img src="work1.jpg" alt="Manicura roja"></div>
-            <div class="gallery-item"><img src="work2.jpg" alt="Francesa pastel"></div>
-            <div class="gallery-item"><img src="work3.jpg" alt="Manicura nude"></div>
-            <div class="gallery-item"><img src="work4.jpg" alt="Lifting de pestañas"></div>
-        </div>
-    </section>
+<section id="salons" class="sec sec-sand">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow" data-i18n="salons_eyebrow">Dónde estamos</p>
+      <h2 data-i18n="salons_main_title">Nuestros Salones</h2>
+    </div>
+    <div id="salonCards" class="salons"></div>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <img src="alina.jpg" alt="Alina" class="footer-avatar">
-        <p>© 2026 Ungles i Estètica. Tots els drets reservats.</p>
-        <p>Instagram: <a href="https://www.instagram.com/ungles_i_estetica" target="_blank">@ungles_i_estetica</a></p>
-    </footer>
+<section id="about" class="sec">
+  <div class="wrap about">
+    <img src="media/foto/alina.jpg" width="800" height="1168" loading="lazy" decoding="async" alt="Alina, fundadora de Ungles i Estètica" data-i18n-alt="alina_alt">
+    <div>
+      <p class="eyebrow" data-i18n="about_eyebrow">Fundadora</p>
+      <h2 data-i18n="about_title">Hola, soy Alina</h2>
+      <p data-i18n="about_desc1">Llevo más de 15 años dedicada al mundo de belleza. En todo este tiempo, mi prioridad siempre ha sido la misma: ofrecerte un espacio de confianza, con la máxima calidad y los mejores cuidados para potenciar tu belleza natural.</p>
+      <p data-i18n="about_desc2">Para mí, un salón de belleza no es solo un lugar donde venimos a arreglarnos, sino un refugio para consentirnos, mimarnos y salir con la autoestima por las nubes.</p>
+    </div>
+  </div>
+</section>
+</main>
 
-    <!-- Multilingual Script -->
-    <script>
-        const translations = {
-            es: {
-                nav_about: "Sobre mí",
-                nav_services: "Servicios",
-                nav_salons: "Salones y Citas",
-                nav_gallery: "Trabajos",
-                hero_title: "Uñas perfectas y estética impecable",
-                hero_subtitle: "Esterilización 100%, técnica ucraniana y un espacio de confianza sin prisas.",
-                badge_1: "💅 Manicura Ucraniana",
-                badge_2: "🛡️ Esterilización 100%",
-                badge_3: "✨ Sin daños, sin prisas",
-                badge_4: "🌿 Uñas perfectas hasta 4 semanas",
-                btn_book: "Reservar Cita",
-                about_title: "Hola, soy Alina 👋✨",
-                about_desc1: "Llevo más de 15 años dedicada al mundo de belleza. En todo este tiempo, mi prioridad siempre ha sido la misma: ofrecerte un espacio de confianza, con la máxima calidad y los mejores cuidados para potenciar tu belleza natural.",
-                about_desc2: "Para mí, un salón de belleza no es solo un lugar donde venimos a arreglarnos, sino un refugio para consentirnos, mimarnos y salir con la autoestima por las nubes.",
-                services_main_title: "Nuestros Servicios",
-                serv_1_title: "Manicura Ucraniana",
-                serv_1_desc: "Técnica avanzada de manicura combinada/rusa para un acabado ultra limpio, cutículas perfectas y durabilidad de hasta 4 semanas.",
-                serv_2_title: "Pedicura SPA",
-                serv_2_desc: "Cuidado profesional de pies con aparatología y cosmética de alta calidad para suavidad y salud duradera.",
-                serv_3_title: "Diseño y Cejas",
-                serv_3_desc: "Diseño de cejas, corrección profesional, laminado y coloración para enmarcar tu mirada de forma natural.",
-                serv_4_title: "Lifting de Pestañas",
-                serv_4_desc: "Curvatura elegante, nutrición con keratina y tinte para realzar tus pestañas naturales sin dañarlas.",
-                serv_5_title: "Uñas de Gel y Semipermanente",
-                serv_5_desc: "Amplia paleta de colores, refuerzo de base y construcciones impecables con materiales seguros.",
-                serv_6_title: "Retirada y Cuidado",
-                serv_6_desc: "Retirada cuidadosa de material anterior y tratamientos de fortalecimiento y nutrición profunda.",
-                salons_main_title: "Nuestros Salones",
-                salon_text: "Reserva tu cita en línea a través de Treatwell o contáctanos por WhatsApp para cualquier consulta.",
-                btn_treatwell: "Reservar en Treatwell",
-                gallery_title: "Nuestros Trabajos"
-            },
-            ca: {
-                nav_about: "Sobre mi",
-                nav_services: "Serveis",
-                nav_salons: "Salons i Cites",
-                nav_gallery: "Treballs",
-                hero_title: "Ungles perfectes i estètica impecable",
-                hero_subtitle: "Esterilització 100%, tècnica ucraïnesa i un espai de confiança sense pressa.",
-                badge_1: "💅 Manicura Ucraïnesa",
-                badge_2: "🛡️ Esterilització 100%",
-                badge_3: "✨ Sense danys, sense pressa",
-                badge_4: "🌿 Ungles perfectes fins a 4 setmanes",
-                btn_book: "Reservar Cita",
-                about_title: "Hola, sóc l'Alina 👋✨",
-                about_desc1: "Porto més de 15 anys dedicada al món de la bellesa. En tot aquest temps, la meva prioritat sempre ha estat la mateixa: oferir-te un espai de confiança, amb la màxima qualitat i les millors cures per potenciar la teva bellesa natural.",
-                about_desc2: "Per a mi, un saló de bellesa no és només un lloc on venim a arreglar-nos, sinó un refugi per consentir-nos, mimar-nos i sortir amb l'autoestima pels núvols.",
-                services_main_title: "Els Nostres Serveis",
-                serv_1_title: "Manicura Ucraïnesa",
-                serv_1_desc: "Tècnica avançada de manicura combinada/russa per a un acabat ultra net, cutícules perfectes i durabilitat de fins a 4 setmanes.",
-                serv_2_title: "Pedicura SPA",
-                serv_2_desc: "Cura professional de peus amb aparatologia i cosmètica d'alta qualitat per a suavitat i salut duradora.",
-                serv_3_title: "Disseny i Celles",
-                serv_3_desc: "Disseny de celles, correcció professional, laminat i coloració per emmarcar la teva mirada de forma natural.",
-                serv_4_title: "Lifting de Pestanyes",
-                serv_4_desc: "Curvatura elegant, nutrició amb queratina i tint per realçar les teves pestanyes naturals sense danyar-les.",
-                serv_5_title: "Ungles de Gel i Semipermanent",
-                serv_5_desc: "Àmplia paleta de colors, reforç de base i construccions impecables amb materials segurs.",
-                serv_6_title: "Retirada i Cura",
-                serv_6_desc: "Retirada acurada de material anterior i tractaments d'enfortiment i nutrició profunda.",
-                salons_main_title: "Els Nostres Salons",
-                salon_text: "Reserva la teva cita en línia a través de Treatwell o contacta'ns per WhatsApp per a qualsevol consulta.",
-                btn_treatwell: "Reservar a Treatwell",
-                gallery_title: "Els Nostres Treballs"
-            },
-            en: {
-                nav_about: "About me",
-                nav_services: "Services",
-                nav_salons: "Salons & Booking",
-                nav_gallery: "Gallery",
-                hero_title: "Flawless Nails & Impeccable Aesthetics",
-                hero_subtitle: "100% sterilization, Ukrainian technique, and a welcoming space without rush.",
-                badge_1: "💅 Ukrainian Manicure",
-                badge_2: "🛡️ 100% Sterilization",
-                badge_3: "✨ No damage, no rush",
-                badge_4: "🌿 Perfect nails up to 4 weeks",
-                btn_book: "Book Appointment",
-                about_title: "Hello, I'm Alina 👋✨",
-                about_desc1: "I have been dedicated to the beauty world for over 15 years. Throughout this time, my priority has always been the same: to offer you a trusted space with the highest quality and best care to enhance your natural beauty.",
-                about_desc2: "For me, a beauty salon is not just a place to get fixed up, but a sanctuary to pamper ourselves and leave with sky-high self-esteem.",
-                services_main_title: "Our Services",
-                serv_1_title: "Ukrainian Manicure",
-                serv_1_desc: "Advanced combined/Russian manicure technique for an ultra-clean finish, perfect cuticles, and up to 4 weeks durability.",
-                serv_2_title: "SPA Pedicure",
-                serv_2_desc: "Professional foot care with high-end equipment and cosmetics for lasting softness and health.",
-                serv_3_title: "Brow Design",
-                serv_3_desc: "Eyebrow shaping, professional correction, lamination, and tinting to naturally frame your gaze.",
-                serv_4_title: "Lash Lifting",
-                serv_4_desc: "Elegant curl, keratin nourishment, and tint to enhance your natural lashes without damage.",
-                serv_5_title: "Gel & Gel-Polish Nails",
-                serv_5_desc: "Wide color palette, base reinforcement, and flawless construction with safe materials.",
-                serv_6_title: "Removal & Care",
-                serv_6_desc: "Careful removal of previous material and deep strengthening and conditioning treatments.",
-                salons_main_title: "Our Salons",
-                salon_text: "Book your appointment online via Treatwell or contact us via WhatsApp for any inquiries.",
-                btn_treatwell: "Book on Treatwell",
-                gallery_title: "Our Work"
-            },
-            uk: {
-                nav_about: "Про мене",
-                nav_services: "Послуги",
-                nav_salons: "Салони та Запис",
-                nav_gallery: "Роботи",
-                hero_title: "Ідеальні нігті та бездоганна естетика",
-                hero_subtitle: "100% стерилізація, українська техніка та затишний простір без поспіху.",
-                badge_1: "💅 Український манікюр",
-                badge_2: "🛡️ 100% стерилізація",
-                badge_3: "✨ Без пошкоджень, без поспіху",
-                badge_4: "🌿 Нігті ідеальні до 4 тижнів",
-                btn_book: "Записатися",
-                about_title: "Привіт, я Аліна 👋✨",
-                about_desc1: "Я присвятила б’юті-індустрії понад 15 років. Весь цей час мій пріоритет залишається незмінним: створити для вас простір довіри з найвищою якістю та найкращим доглядом для підкреслення вашої природної краси.",
-                about_desc2: "Для мене салон краси — це не просто місце для догляду, а притулок, де можна розслабитися, побалувати себе та вийти з неймовірною впевненістю в собі.",
-                services_main_title: "Наші Послуги",
-                serv_1_title: "Український манікюр",
-                serv_1_desc: "Передова комбінована/руська техніка манікюру для ультрачистого результату, ідеальної кутикули та стійкості до 4 тижнів.",
-                serv_2_title: "SPA Педикюр",
-                serv_2_desc: "Професійний догляд за стопами з використанням апаратури та високоякісної косметики.",
-                serv_3_title: "Корекція та дизайн брів",
-                serv_3_desc: "Моделювання, професійна корекція, ламінування та фарбування брів для природного обрамлення погляду.",
-                serv_4_title: "Ламінування війок",
-                serv_4_desc: "Елегантний вигин, живлення кератином та фарбування для підкреслення ваших природних війок без шкоди.",
-                serv_5_title: "Гелеві та гель-лакові нігті",
-                serv_5_desc: "Широка палітра кольорів, укріплення бази та бездоганне нарощування безпечними матеріалами.",
-                serv_6_title: "Зняття та догляд",
-                serv_6_desc: "Дбайливе зняття попереднього покриття та процедури глибокого відновлення й живлення.",
-                salons_main_title: "Наші Салони",
-                salon_text: "Запишіться на прийом онлайн через Treatwell або зв'яжіться з нами у WhatsApp з будь-яких питань.",
-                btn_treatwell: "Записатися через Treatwell",
-                gallery_title: "Наші Роботи"
-            }
-        };
+<footer class="site">
+  <a class="logo" href="#top">Ungles i Estètica</a>
+  <div class="foot-links">
+    <a href="https://www.instagram.com/ungles_i_estetica/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.tiktok.com/@ungles_i_estetica" target="_blank" rel="noopener">TikTok</a>
+    <a href="#salons" data-i18n="nav_salons">Salones</a>
+  </div>
+  <!-- LEGAL: activar cuando el cliente haya entregado los datos de empresa (ver legal/):
+  <div class="foot-links">
+    <a href="legal/aviso-legal.html" data-i18n="legal_notice">Aviso legal</a>
+    <a href="legal/privacidad.html" data-i18n="legal_privacy">Privacidad</a>
+    <a href="legal/cookies.html" data-i18n="legal_cookies">Cookies</a>
+  </div> -->
+  <p>© <span id="year">2026</span> Ungles i Estètica. <span data-i18n="rights">Todos los derechos reservados.</span></p>
+</footer>
 
-        function setLang(lang, btnElement) {
-            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-            btnElement.classList.add('active');
+<div class="dock" id="dock">
+  <button class="btn btn-dark" data-book="choose" data-i18n="book">Reservar</button>
+</div>
 
-            document.querySelectorAll('[data-i18n]').forEach(el => {
-                const key = el.getAttribute('data-i18n');
-                if (translations[lang] && translations[lang][key]) {
-                    el.textContent = translations[lang][key];
-                }
-            });
-        }
-    </script>
+<!-- Salon chooser -->
+<div class="modal" id="chooser" role="dialog" aria-modal="true" aria-labelledby="chooserTitle">
+  <div class="sheet">
+    <div class="sheet-head">
+      <h2 id="chooserTitle" data-i18n="choose_salon">Elige tu salón</h2>
+      <button class="x" data-close aria-label="Cerrar" data-i18n-aria="close">×</button>
+    </div>
+    <div id="chooserBody"></div>
+  </div>
+</div>
+
+<!-- Treatwell booking window -->
+<div class="modal" id="booker" role="dialog" aria-modal="true" aria-labelledby="bookerTitle">
+  <div class="booker">
+    <div class="booker-head">
+      <div>
+        <h2 id="bookerTitle"></h2>
+        <a id="bookerLink" href="#" target="_blank" rel="noopener" data-i18n="open_new">Abrir en una pestaña nueva</a>
+      </div>
+      <button class="x" data-close aria-label="Cerrar" data-i18n-aria="close">×</button>
+    </div>
+    <div class="booker-body">
+      <iframe id="bookerFrame" title="Treatwell" allow="payment" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      <div class="loader" id="bookerLoader" role="status"><div class="spin"></div><span data-i18n="loading_book">Cargando la agenda de Treatwell…</span></div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ---------- Config (no cambia con los precios) ---------- */
+const SITE = 'https://ungles-estetica.netlify.app/';
+const SALONS = {
+  'sant-just': {
+    name: 'Sant Just Desvern', short: 'Sant Just', slug: 'ungles-i-estetica-sant-just-desvern',
+    street: 'Carrer Bonavista 75', zip: '08960', city: 'Sant Just Desvern',
+    phone: '614 465 681', wa: '34614465681'
+  },
+  'cornella': {
+    name: 'Cornellà de Llobregat', short: 'Cornellà', slug: 'ungles-i-estetica',
+    street: 'Carrer de Ramoneda 75', zip: '08940', city: 'Cornellà de Llobregat',
+    phone: '614 397 997', wa: '34614397997'
+  }
+};
+const SALON_KEYS = Object.keys(SALONS);
+const LOCALES = { es: 'es-ES', ca: 'ca-ES', en: 'en-GB', uk: 'uk-UA' };
+const WA_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.300-1.200l-.3-.2-3 .8.8-2.900-.2-.3A8.200 8.200 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.2-.3.2-.5.100-1.500-.7-2.400-1.300-3.400-3-.3-.4.300-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.300-.2.300-.9.900-.9 2.200s.9 2.500 1.100 2.700c.1.200 1.800 2.800 4.400 3.900 1.600.7 2.300.8 3.100.6.5-.1 1.500-.6 1.700-1.200.2-.6.2-1.100.2-1.200-.1-.200-.3-.200-.500-.400z"/></svg>';
+
+/* ---------- Traducciones ---------- */
+const translations = {
+  es: {
+    title: "Ungles i Estètica | Manicura ucraniana en Sant Just Desvern y Cornellà",
+    description: "Manicura ucraniana y estética en Sant Just Desvern y Cornellà de Llobregat. Esterilización 100%, sin daños, sin prisas. Consulta precios y reserva online.",
+    skip: "Saltar al contenido",
+    tagline: "Manicura ucraniana y estética en Barcelona",
+    nav_about: "Sobre mí", nav_services: "Servicios y precios", nav_salons: "Salones", nav_work: "Trabajos", nav_reviews: "Opiniones",
+    hero_title: "Uñas perfectas y estética impecable",
+    hero_subtitle: "Esterilización 100%, técnica ucraniana y un espacio de confianza sin prisas.",
+    badge_1: "Manicura ucraniana", badge_2: "Esterilización 100%", badge_3: "Sin daños, sin prisas", badge_4: "Uñas perfectas hasta 4 semanas",
+    book: "Reservar", book_online: "Reservar online", see_prices: "Ver precios",
+    reviews_count: "{n} opiniones en Treatwell",
+    services_eyebrow: "Carta", services_title: "Servicios y precios",
+    choose_salon: "Elige tu salón", choose_hint: "Elige tu salón: los precios son distintos en cada uno.",
+    see_menu: "Ver servicios y precios", full_menu: "Ver toda la carta de {v} en Treatwell",
+    from: "desde", u_min: "min", u_h: "h", offer: "Oferta", was_price: "Precio anterior", now_price: "Precio actual",
+    prices_note: "Precios según Treatwell.", loading: "Cargando…",
+    load_error: "No se han podido cargar los precios. Consulta la carta en Treatwell.",
+    wa_book: "Reservar por WhatsApp",
+    wa_msg_service: "Hola, me gustaría reservar: {s} ({v}).",
+    wa_msg_general: "Hola, me gustaría reservar una cita en {v}.",
+    work_eyebrow: "Galería", gallery_title: "Nuestros Trabajos", play_video: "Reproducir vídeo", photo_alt: "Trabajo realizado en Ungles i Estètica",
+    reviews_title: "Opiniones", reviews_verified: "Opiniones verificadas de clientes en Treatwell",
+    reviews_all: "Ver todas las opiniones en Treatwell",
+    dim_Ambiente: "Ambiente", dim_Limpieza: "Limpieza", dim_Empleados: "Empleados",
+    salons_eyebrow: "Dónde estamos", salons_main_title: "Nuestros Salones", hours: "Horario", closed: "Cerrado", directions: "Cómo llegar",
+    about_eyebrow: "Fundadora", about_title: "Hola, soy Alina", alina_alt: "Alina, fundadora de Ungles i Estètica",
+    about_desc1: "Llevo más de 15 años dedicada al mundo de belleza. En todo este tiempo, mi prioridad siempre ha sido la misma: ofrecerte un espacio de confianza, con la máxima calidad y los mejores cuidados para potenciar tu belleza natural.",
+    about_desc2: "Para mí, un salón de belleza no es solo un lugar donde venimos a arreglarnos, sino un refugio para consentirnos, mimarnos y salir con la autoestima por las nubes.",
+    book_at: "Reservar en {v}", loading_book: "Cargando la agenda de Treatwell…", open_new: "Abrir en una pestaña nueva", close: "Cerrar",
+    rights: "Todos los derechos reservados.", legal_notice: "Aviso legal", legal_privacy: "Privacidad", legal_cookies: "Cookies",
+    nav_main: "Principal", lang_switch: "Idioma", pause_video: "Pausar o reanudar el vídeo"
+  },
+  ca: {
+    title: "Ungles i Estètica | Manicura ucraïnesa a Sant Just Desvern i Cornellà",
+    description: "Manicura ucraïnesa i estètica a Sant Just Desvern i Cornellà de Llobregat. Esterilització 100%, sense danys, sense pressa. Consulta preus i reserva en línia.",
+    skip: "Salta al contingut",
+    tagline: "Manicura ucraïnesa i estètica a Barcelona",
+    nav_about: "Sobre mi", nav_services: "Serveis i preus", nav_salons: "Salons", nav_work: "Treballs", nav_reviews: "Opinions",
+    hero_title: "Ungles perfectes i estètica impecable",
+    hero_subtitle: "Esterilització 100%, tècnica ucraïnesa i un espai de confiança sense pressa.",
+    badge_1: "Manicura ucraïnesa", badge_2: "Esterilització 100%", badge_3: "Sense danys, sense pressa", badge_4: "Ungles perfectes fins a 4 setmanes",
+    book: "Reserva", book_online: "Reserva en línia", see_prices: "Consulta els preus",
+    reviews_count: "{n} opinions a Treatwell",
+    services_eyebrow: "Carta", services_title: "Serveis i preus",
+    choose_salon: "Tria el teu saló", choose_hint: "Tria el teu saló: els preus són diferents a cadascun.",
+    see_menu: "Consulta serveis i preus", full_menu: "Consulta tota la carta de {v} a Treatwell",
+    from: "des de", u_min: "min", u_h: "h", offer: "Oferta", was_price: "Preu anterior", now_price: "Preu actual",
+    prices_note: "Preus segons Treatwell.", loading: "Carregant…",
+    load_error: "No s'han pogut carregar els preus. Consulta la carta a Treatwell.",
+    wa_book: "Reserva per WhatsApp",
+    wa_msg_service: "Hola, m'agradaria demanar hora per a: {s} ({v}).",
+    wa_msg_general: "Hola, m'agradaria demanar hora a {v}.",
+    work_eyebrow: "Galeria", gallery_title: "Els nostres treballs", play_video: "Reprodueix el vídeo", photo_alt: "Treball fet a Ungles i Estètica",
+    reviews_title: "Opinions", reviews_verified: "Opinions verificades de clients a Treatwell",
+    reviews_all: "Llegeix totes les opinions a Treatwell",
+    dim_Ambiente: "Ambient", dim_Limpieza: "Neteja", dim_Empleados: "Personal",
+    salons_eyebrow: "On som", salons_main_title: "Els nostres salons", hours: "Horari", closed: "Tancat", directions: "Com arribar-hi",
+    about_eyebrow: "Fundadora", about_title: "Hola, soc l'Alina", alina_alt: "L'Alina, fundadora d'Ungles i Estètica",
+    about_desc1: "Porto més de 15 anys dedicada al món de la bellesa. En tot aquest temps, la meva prioritat sempre ha estat la mateixa: oferir-te un espai de confiança, amb la màxima qualitat i les millors cures per potenciar la teva bellesa natural.",
+    about_desc2: "Per a mi, un saló de bellesa no és només un lloc on venim a arreglar-nos, sinó un refugi per cuidar-nos, deixar-nos consentir i sortir amb l'autoestima pels núvols.",
+    book_at: "Reserva a {v}", loading_book: "Carregant l'agenda de Treatwell…", open_new: "Obre en una pestanya nova", close: "Tanca",
+    rights: "Tots els drets reservats.", legal_notice: "Avís legal", legal_privacy: "Privacitat", legal_cookies: "Galetes",
+    nav_main: "Principal", lang_switch: "Idioma", pause_video: "Posa en pausa o reprèn el vídeo"
+  },
+  en: {
+    title: "Ungles i Estètica | Ukrainian manicure in Sant Just Desvern & Cornellà",
+    description: "Ukrainian manicure and beauty treatments in Sant Just Desvern and Cornellà de Llobregat. 100% sterilisation, no damage, no rush. See prices and book online.",
+    skip: "Skip to content",
+    tagline: "Ukrainian manicure & beauty in Barcelona",
+    nav_about: "About me", nav_services: "Services & prices", nav_salons: "Salons", nav_work: "Our work", nav_reviews: "Reviews",
+    hero_title: "Flawless Nails & Impeccable Aesthetics",
+    hero_subtitle: "100% sterilisation, Ukrainian technique, and a welcoming space with no rush.",
+    badge_1: "Ukrainian manicure", badge_2: "100% sterilisation", badge_3: "No damage, no rush", badge_4: "Perfect nails for up to 4 weeks",
+    book: "Book", book_online: "Book online", see_prices: "See prices",
+    reviews_count: "{n} reviews on Treatwell",
+    services_eyebrow: "Menu", services_title: "Services & prices",
+    choose_salon: "Choose your salon", choose_hint: "Choose your salon: prices differ between the two.",
+    see_menu: "See services and prices", full_menu: "See the full {v} menu on Treatwell",
+    from: "from", u_min: "min", u_h: "h", offer: "Offer", was_price: "Previous price", now_price: "Current price",
+    prices_note: "Prices as listed on Treatwell.", loading: "Loading…",
+    load_error: "Prices could not be loaded. See the menu on Treatwell.",
+    wa_book: "Book via WhatsApp",
+    wa_msg_service: "Hello, I'd like to book: {s} ({v}).",
+    wa_msg_general: "Hello, I'd like to book an appointment at {v}.",
+    work_eyebrow: "Gallery", gallery_title: "Our Work", play_video: "Play video", photo_alt: "Work done at Ungles i Estètica",
+    reviews_title: "Reviews", reviews_verified: "Verified customer reviews on Treatwell",
+    reviews_all: "See all reviews on Treatwell",
+    dim_Ambiente: "Atmosphere", dim_Limpieza: "Cleanliness", dim_Empleados: "Staff",
+    salons_eyebrow: "Find us", salons_main_title: "Our Salons", hours: "Opening hours", closed: "Closed", directions: "Directions",
+    about_eyebrow: "Founder", about_title: "Hello, I'm Alina", alina_alt: "Alina, founder of Ungles i Estètica",
+    about_desc1: "I have worked in the beauty industry for over 15 years. Throughout this time, my priority has always been the same: to offer you a space you can trust, with the highest quality and the best care to enhance your natural beauty.",
+    about_desc2: "For me, a beauty salon is not just a place where we go to get our nails done, but a sanctuary where we can treat and pamper ourselves and leave with sky-high self-esteem.",
+    book_at: "Book at {v}", loading_book: "Loading the Treatwell booking calendar…", open_new: "Open in a new tab", close: "Close",
+    rights: "All rights reserved.", legal_notice: "Legal notice", legal_privacy: "Privacy", legal_cookies: "Cookies",
+    nav_main: "Main", lang_switch: "Language", pause_video: "Pause or resume the video"
+  },
+  uk: {
+    title: "Ungles i Estètica | Український манікюр у Сан-Жуст-Десверні та Корнельї",
+    description: "Український манікюр та естетика в Сан-Жуст-Десверні та Корнельї-де-Льобрегат. 100% стерилізація, без пошкоджень, без поспіху. Ціни та онлайн-запис.",
+    skip: "Перейти до основного вмісту",
+    tagline: "Український манікюр та естетика в Барселоні",
+    nav_about: "Про мене", nav_services: "Послуги та ціни", nav_salons: "Салони", nav_work: "Роботи", nav_reviews: "Відгуки",
+    hero_title: "Ідеальні нігті та бездоганна естетика",
+    hero_subtitle: "100% стерилізація, українська техніка та затишний простір без поспіху.",
+    badge_1: "Український манікюр", badge_2: "100% стерилізація", badge_3: "Без пошкоджень, без поспіху", badge_4: "Нігті ідеальні до 4 тижнів",
+    book: "Записатися", book_online: "Записатися онлайн", see_prices: "Переглянути ціни",
+    reviews_count: "Відгуків на Treatwell: {n}",
+    services_eyebrow: "Прайс", services_title: "Послуги та ціни",
+    choose_salon: "Оберіть салон", choose_hint: "Оберіть салон: ціни в салонах відрізняються.",
+    see_menu: "Переглянути послуги та ціни", full_menu: "Усі послуги салону {v} на Treatwell",
+    from: "від", u_min: "хв", u_h: "год", offer: "Акція", was_price: "Попередня ціна", now_price: "Поточна ціна",
+    prices_note: "Ціни згідно з Treatwell.", loading: "Завантаження…",
+    load_error: "Не вдалося завантажити ціни. Перегляньте перелік послуг на Treatwell.",
+    wa_book: "Записатися через WhatsApp",
+    wa_msg_service: "Добрий день! Хочу записатися: {s} ({v}).",
+    wa_msg_general: "Добрий день! Хочу записатися на візит у салон {v}.",
+    work_eyebrow: "Галерея", gallery_title: "Наші роботи", play_video: "Відтворити відео", photo_alt: "Робота салону Ungles i Estètica",
+    reviews_title: "Відгуки", reviews_verified: "Перевірені відгуки клієнтів на Treatwell",
+    reviews_all: "Усі відгуки на Treatwell",
+    dim_Ambiente: "Атмосфера", dim_Limpieza: "Чистота", dim_Empleados: "Персонал",
+    salons_eyebrow: "Де ми", salons_main_title: "Наші салони", hours: "Графік роботи", closed: "Зачинено", directions: "Як дістатися",
+    about_eyebrow: "Засновниця", about_title: "Привіт, я Аліна", alina_alt: "Аліна, засновниця Ungles i Estètica",
+    about_desc1: "Я присвятила б'юті-індустрії понад 15 років. Увесь цей час мій пріоритет залишається незмінним: створити для вас простір, якому можна довіряти, — з найвищою якістю та найкращим доглядом, що підкреслює вашу природну красу.",
+    about_desc2: "Для мене салон краси — це не просто місце, куди приходять привести себе до ладу, а затишний куточок, де можна розслабитися, потішити себе та вийти з неймовірною впевненістю в собі.",
+    book_at: "Запис у салон {v}", loading_book: "Завантажуємо календар Treatwell…", open_new: "Відкрити в новій вкладці", close: "Закрити",
+    rights: "Усі права захищено.", legal_notice: "Правова інформація", legal_privacy: "Конфіденційність", legal_cookies: "Файли cookie",
+    nav_main: "Головне меню", lang_switch: "Мова", pause_video: "Призупинити або відновити відео"
+  }
+};
+
+/* ---------- Estado ---------- */
+const store = {
+  get(k){ try { return localStorage.getItem(k); } catch(e){ return null; } },
+  set(k,v){ try { localStorage.setItem(k,v); } catch(e){} }
+};
+const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const qs = new URLSearchParams(location.search);
+const own = (o, k) => !!k && Object.prototype.hasOwnProperty.call(o, k);
+let lang = [qs.get('lang'), store.get('lang')].find(l => own(translations, l)) || 'es';
+let salon = [qs.get('salon'), store.get('salon')].find(s => own(SALONS, s)) || null;
+let PRICES = null, REVIEWS = null, priceError = false, cat = 0;
+
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const t = (k, vars) => {
+  let s = (translations[lang] && translations[lang][k]) || translations.es[k] || k;
+  if (vars) for (const v in vars) s = s.replace('{' + v + '}', vars[v]);
+  return s;
+};
+const money = v => new Intl.NumberFormat(LOCALES[lang], { style: 'currency', currency: 'EUR', currencyDisplay: 'narrowSymbol', minimumFractionDigits: Number(v) % 1 ? 2 : 0, maximumFractionDigits: 2 }).format(Number(v));
+const mins = m => m < 60 ? m + ' ' + t('u_min') : Math.floor(m / 60) + ' ' + t('u_h') + (m % 60 ? ' ' + (m % 60) + ' ' + t('u_min') : '');
+const dur = (a, b) => (!a && !b) ? '' : (!b || a === b) ? mins(a) : (b < 60 ? a + '–' + mins(b) : mins(a) + ' – ' + mins(b));
+const stars = (avg, label) => '<span class="stars" role="img" aria-label="' + esc(label) + '"><i style="width:' + Math.max(0, Math.min(100, avg / 5 * 100)).toFixed(1) + '%"></i></span>';
+const rating = k => PRICES && PRICES[k] && PRICES[k].beoordeling;
+const num = (v, d) => new Intl.NumberFormat(LOCALES[lang], { minimumFractionDigits: d, maximumFractionDigits: d }).format(v);
+
+/* ---------- Enlaces de reserva ---------- */
+const widgetMenu = k => 'https://widget.treatwell.es/establecimiento/' + SALONS[k].slug + '/';
+const widgetService = (k, itemId, optId) => 'https://widget.treatwell.es/availability?venueId=' + PRICES[k].venue_id +
+  '&proposedServices=' + encodeURIComponent(JSON.stringify([{ menuItemId: String(itemId), optionIds: [String(optId)] }]));
+const venueUrl = k => (PRICES && PRICES[k] && PRICES[k].url) || 'https://www.treatwell.es/establecimiento/' + SALONS[k].slug + '/';
+const waLink = (k, service) => 'https://wa.me/' + SALONS[k].wa + '?text=' + encodeURIComponent(
+  service ? t('wa_msg_service', { s: service, v: SALONS[k].name }) : t('wa_msg_general', { v: SALONS[k].name }));
+const waBtn = (k, service, withText) => '<a class="btn btn-wa btn-sm' + (withText ? '' : ' btn-icon') + '" href="' + esc(waLink(k, service)) +
+  '" target="_blank" rel="noopener" aria-label="' + esc(t('wa_book') + (service ? ': ' + service : ' · ' + SALONS[k].name)) + '">' + WA_ICON + (withText ? '<span>WhatsApp</span>' : '') + '</a>';
+
+/* ---------- Render ---------- */
+function renderStatic(){
+  document.documentElement.lang = lang;
+  document.title = t('title');
+  $('meta[name="description"]').content = t('description');
+  $('meta[property="og:title"]').content = t('title');
+  $('meta[property="og:description"]').content = t('description');
+  const pageUrl = SITE + (lang === 'es' ? '' : '?lang=' + lang);
+  $('link[rel="canonical"]').href = pageUrl;
+  $('meta[property="og:url"]').content = pageUrl;
+  $('meta[property="og:locale"]').content = LOCALES[lang].replace('-', '_');
+  $$('[data-i18n]').forEach(el => { el.textContent = t(el.dataset.i18n); });
+  $$('[data-i18n-alt]').forEach(el => { el.alt = t(el.dataset.i18nAlt); });
+  $$('[data-i18n-aria]').forEach(el => { el.setAttribute('aria-label', t(el.dataset.i18nAria)); });
+  $$('.lang-btn').forEach(b => { const on = b.dataset.lang === lang; b.classList.toggle('active', on); b.setAttribute('aria-pressed', on); });
+  $$('.clip').forEach(c => c.setAttribute('aria-label', t('play_video')));
+}
+
+function renderTabs(){
+  $$('[data-salon-tabs]').forEach(box => {
+    const cur = salon || (box.closest('#reviews') ? SALON_KEYS[0] : null);
+    box.innerHTML = SALON_KEYS.map(k => '<button type="button" data-salon="' + k + '" aria-pressed="' + (cur === k) + '" aria-label="' + esc(SALONS[k].name) + '">' + esc(SALONS[k].short) + '</button>').join('');
+  });
+}
+
+function renderHeroRating(){
+  const box = $('#heroRating');
+  if (!PRICES) { box.innerHTML = ''; return; }
+  box.innerHTML = SALON_KEYS.map(k => {
+    const r = rating(k); if (!r || !r.count) return '';
+    const shown = num(r.average, 1);
+    return '<a class="rate" href="#reviews" data-salon="' + k + '"><b>' + esc(SALONS[k].name) + '</b>' +
+      '<span class="rate-line"><span class="rate-num">' + shown + '</span>' + stars(r.average, shown + ' / 5') + '</span>' +
+      '<span>' + esc(t('reviews_count', { n: r.count })) + '</span></a>';
+  }).join('');
+}
+
+function priceHtml(o){
+  const now = Number(o.prijs), was = Number(o.was);
+  if (was > now) return '<span class="price"><s><span class="sr-only">' + esc(t('was_price')) + ': </span>' + money(was) + '</s><span class="now"><span class="sr-only">' + esc(t('now_price')) + ': </span>' + money(now) + '</span></span>';
+  return '<span class="price">' + money(now) + '</span>';
+}
+
+function renderMenu(){
+  const pick = $('#pick'), cats = $('#cats'), menu = $('#menu'), state = $('#menuState'), all = $('#menuAll');
+  if (priceError) {
+    pick.hidden = cats.hidden = true; menu.innerHTML = ''; state.hidden = false; state.textContent = t('load_error');
+    all.hidden = false;
+    all.innerHTML = SALON_KEYS.map(k => '<a class="btn btn-line btn-sm" target="_blank" rel="noopener" href="' + esc(venueUrl(k)) + '">' + esc(SALONS[k].name) + '</a>').join('');
+    return;
+  }
+  if (!PRICES) { state.hidden = false; state.textContent = t('loading'); return; }
+  state.hidden = true;
+  if (!salon) {
+    cats.hidden = all.hidden = true; menu.innerHTML = ''; pick.hidden = false;
+    pick.innerHTML = SALON_KEYS.map(k => '<button data-salon="' + k + '"><strong>' + esc(SALONS[k].name) + '</strong><span>' +
+      esc(addr(k).street) + '</span><span class="go">' + esc(t('see_menu')) + ' →</span></button>').join('');
+    return;
+  }
+  pick.hidden = true;
+  const groups = PRICES[salon].groepen || [];
+  if (cat >= groups.length) cat = 0;
+  cats.hidden = false;
+  cats.innerHTML = groups.map((g, i) => '<button type="button" lang="es" data-cat="' + i + '" aria-pressed="' + (i === cat) + '">' + esc(g.naam) + '</button>').join('');
+  const g = groups[cat];
+  menu.innerHTML = !g ? '' : g.diensten.map(d => {
+    const single = d.opties.length === 1;
+    const sale = d.opties.some(o => Number(o.was) > Number(o.prijs));
+    const rows = d.opties.map(o => {
+      const full = single || o.naam === d.naam ? d.naam : d.naam + ' – ' + o.naam;
+      const od = o.minuten ? mins(o.minuten) : '';
+      const label = single ? (dur(d.min_minuten, d.max_minuten) || d.naam) : o.naam;
+      return '<div class="opt"><span class="opt-name"' + (single ? '' : ' lang="es"') + '>' + esc(label) + (!single && od ? '<small lang="' + lang + '">' + od + '</small>' : '') + '</span>' + priceHtml(o) +
+        '<span class="opt-act">' + waBtn(salon, full) +
+        '<button class="btn btn-dark btn-sm" data-book="service" data-item="' + esc(d.id) + '" data-opt="' + esc(o.id) + '" data-name="' + esc(full) + '" aria-label="' + esc(t('book') + ': ' + full) + '">' + esc(t('book')) + '</button></span></div>';
+    }).join('');
+    return '<article class="svc"><div class="svc-head"><h3><span lang="es">' + esc(d.naam) + '</span>' + (sale ? '<span class="tag">' + esc(t('offer')) + '</span>' : '') + '</h3>' +
+      (single ? '' : '<span class="dur">' + dur(d.min_minuten, d.max_minuten) + '</span>') + '</div>' + rows + '</article>';
+  }).join('');
+  all.hidden = false;
+  all.innerHTML = '<button class="btn btn-line btn-sm" data-book="menu" data-salon-book="' + salon + '">' + esc(t('full_menu', { v: SALONS[salon].name })) + '</button>' + waBtn(salon, null, true);
+}
+
+function renderReviews(){
+  const box = $('#reviewsBody');
+  const k = salon || SALON_KEYS[0];
+  const r = rating(k);
+  let h = '';
+  if (r && r.count) {
+    const shown = num(r.average, 1);
+    h += '<div class="score"><span class="score-num">' + shown + '</span>' + stars(r.average, shown + ' / 5') +
+      '<small>' + esc(SALONS[k].name) + ' · ' + esc(t('reviews_count', { n: r.count })) + '</small></div>';
+    if (r.dimensions && r.dimensions.length) h += '<div class="dims">' + r.dimensions.map(d =>
+      '<span>' + esc(t('dim_' + d.name) === 'dim_' + d.name ? d.name : t('dim_' + d.name)) + ' <b>' + num(d.average, 1) + '</b></span>').join('') + '</div>';
+  }
+  const rv = REVIEWS && REVIEWS[k];
+  const list = rv && rv.reviews ? rv.reviews.filter(x => x.tekst && x.geverifieerd === true) : [];
+  if (list.length) {
+    h += '<div class="quotes">' + list.slice(0, 6).map(x => {
+      let when = '';
+      if (x.datum) { const d = new Date(x.datum); if (!isNaN(d)) when = d.toLocaleDateString(LOCALES[lang], { month: 'long', year: 'numeric', timeZone: 'UTC' }); }
+      const meta = [x.dienst ? '<span lang="es">' + esc(x.dienst) + '</span>' : '', esc(when)].filter(Boolean).join(' · ');
+      return '<figure class="quote">' + (x.sterren ? stars(x.sterren, x.sterren + ' / 5') : '') +
+        '<blockquote lang="' + esc(x.taal || 'es') + '">“' + esc(x.tekst) + '”</blockquote>' +
+        '<figcaption class="quote-by">' + (x.voornaam ? '<b>' + esc(x.voornaam) + '</b>' : '') + (meta ? (x.voornaam ? '<br>' : '') + meta : '') + '</figcaption></figure>';
+    }).join('') + '</div><p class="menu-note">' + esc(t('reviews_verified')) + '</p>';
+  }
+  const url = (rv && rv.reviews_url) || (PRICES && PRICES[k] && PRICES[k].reviews_url) || venueUrl(k);
+  h += '<p class="center"><a class="btn btn-line btn-sm" target="_blank" rel="noopener" href="' + esc(url) + '">' + esc(t('reviews_all')) + '</a></p>';
+  box.innerHTML = h;
+}
+
+function addr(k){
+  const a = (PRICES && PRICES[k] && PRICES[k].adres) || {};
+  return { street: a.straat || SALONS[k].street, zip: a.postcode || SALONS[k].zip, city: a.plaats || SALONS[k].city };
+}
+
+function hoursRows(k){
+  const oh = (PRICES && PRICES[k] && PRICES[k].openingstijden) || [];
+  const order = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday'];
+  const today = order[(new Date().getDay() + 6) % 7];
+  return order.map((day, i) => {
+    const o = oh.find(x => x.dayOfWeek === day); if (!o) return '';
+    let name = new Date(2024, 0, 1 + i).toLocaleDateString(LOCALES[lang], { weekday: 'long' });
+    name = name.charAt(0).toUpperCase() + name.slice(1);
+    return '<tr' + (day === today ? ' class="today"' : '') + '><td>' + esc(name) + '</td><td' + (o.open ? '' : ' class="closed"') + '>' +
+      (o.open ? esc(o.from) + ' – ' + esc(o.to) : esc(t('closed'))) + '</td></tr>';
+  }).join('');
+}
+
+function renderSalons(){
+  $('#salonCards').innerHTML = SALON_KEYS.map(k => {
+    const s = SALONS[k], a = addr(k), rows = hoursRows(k);
+    const map = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('Ungles i Estètica, ' + a.street + ', ' + a.zip + ' ' + a.city);
+    return '<article class="salon"><h3>' + esc(s.name) + '</h3>' +
+      '<address>' + esc(a.street) + '<br>' + esc(a.zip) + ' ' + esc(a.city) + '<br><a href="tel:+' + s.wa + '">' + esc(s.phone) + '</a> · <a href="' + esc(map) + '" target="_blank" rel="noopener">' + esc(t('directions')) + ' →</a></address>' +
+      (rows ? '<table class="hours"><caption>' + esc(t('hours')) + '</caption><tbody>' + rows + '</tbody></table>' : '') +
+      '<div class="salon-act"><button class="btn btn-dark" data-book="menu" data-salon-book="' + k + '">' + esc(t('book_online')) + '</button>' + waBtn(k, null, true) + '</div></article>';
+  }).join('');
+}
+
+function renderChooser(){
+  $('#chooserBody').innerHTML = SALON_KEYS.map(k => {
+    const a = addr(k), r = rating(k);
+    return '<div class="choice"><strong>' + esc(SALONS[k].name) + '</strong><span>' + esc(a.street) + ', ' + esc(a.city) +
+      (r && r.count ? ' · ★ ' + num(r.average, 1) + ' (' + r.count + ')' : '') + '</span>' +
+      '<div class="row"><button class="btn btn-dark btn-sm" data-book="menu" data-salon-book="' + k + '">' + esc(t('book_online')) + '</button>' + waBtn(k, null, true) + '</div></div>';
+  }).join('');
+}
+
+function renderJsonLd(){
+  if (!PRICES) return;
+  const days = { monday:'Monday', tuesday:'Tuesday', wednesday:'Wednesday', thursday:'Thursday', friday:'Friday', saturday:'Saturday', sunday:'Sunday' };
+  const graph = SALON_KEYS.map(k => {
+    const p = PRICES[k], s = SALONS[k], a = addr(k), r = p.beoordeling;
+    const o = {
+      '@type': 'NailSalon', '@id': SITE + '#' + k, name: p.naam || 'Ungles i Estètica', url: SITE, image: SITE + 'media/og.jpg',
+      telephone: '+' + s.wa,
+      address: { '@type': 'PostalAddress', streetAddress: a.street, postalCode: a.zip, addressLocality: a.city, addressRegion: 'Barcelona', addressCountry: 'ES' },
+      openingHoursSpecification: (p.openingstijden || []).filter(x => x.open).map(x => ({ '@type': 'OpeningHoursSpecification', dayOfWeek: 'https://schema.org/' + days[x.dayOfWeek], opens: x.from, closes: x.to })),
+      sameAs: [venueUrl(k), 'https://www.instagram.com/ungles_i_estetica/', 'https://www.tiktok.com/@ungles_i_estetica'],
+      potentialAction: { '@type': 'ReserveAction', target: venueUrl(k) }
+    };
+    if (p.geo && p.geo.lat) o.geo = { '@type': 'GeoCoordinates', latitude: p.geo.lat, longitude: p.geo.lon };
+    if (r && r.count) o.aggregateRating = { '@type': 'AggregateRating', ratingValue: Number(Number(r.average).toFixed(1)), ratingCount: r.count, bestRating: 5, worstRating: 1 };
+    return o;
+  });
+  let el = $('#ld'); if (!el) { el = document.createElement('script'); el.type = 'application/ld+json'; el.id = 'ld'; document.head.appendChild(el); }
+  el.textContent = JSON.stringify({ '@context': 'https://schema.org', '@graph': graph });
+}
+
+function renderAll(){ renderStatic(); renderTabs(); renderHeroRating(); renderMenu(); renderReviews(); renderSalons(); renderChooser(); }
+
+function setLang(l, btn){
+  if (!own(translations, l)) return;
+  lang = l; store.set('lang', l);
+  try { const u = new URL(location.href); l === 'es' ? u.searchParams.delete('lang') : u.searchParams.set('lang', l); history.replaceState(null, '', u); } catch (e) {}
+  renderAll();
+}
+function setSalon(k, scrollTo){
+  if (!own(SALONS, k)) return;
+  if (salon !== k) cat = 0;
+  salon = k; store.set('salon', k);
+  try { const u = new URL(location.href); if (u.searchParams.has('salon')) { u.searchParams.set('salon', k); history.replaceState(null, '', u); } } catch (e) {}
+  renderTabs(); renderMenu(); renderReviews();
+  if (scrollTo) { const el = $(scrollTo); if (el) el.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' }); }
+}
+
+/* ---------- Ventanas ---------- */
+let lastFocus = null, loaderTimer = null, loaderCap = null;
+function openModal(m){
+  if (!$('.modal.open')) lastFocus = document.activeElement;
+  $$('.modal.open').forEach(x => x.classList.remove('open'));
+  m.classList.add('open'); document.body.classList.add('locked');
+  const x = $('[data-close]', m); if (x) setTimeout(() => x.focus(), 60);
+}
+function closeModal(){
+  const m = $('.modal.open'); if (!m) return;
+  m.classList.remove('open'); document.body.classList.remove('locked');
+  if (m.id === 'booker') { clearTimeout(loaderTimer); clearTimeout(loaderCap); setTimeout(() => { if (!$('#booker').classList.contains('open')) $('#bookerFrame').removeAttribute('src'); }, 300); }
+  if (lastFocus && lastFocus.focus) lastFocus.focus();
+}
+function openBooking(url, title){
+  const f = $('#bookerFrame'), l = $('#bookerLoader');
+  clearTimeout(loaderTimer); clearTimeout(loaderCap);
+  l.classList.remove('done', 'mini');
+  $('#bookerTitle').textContent = title;
+  $('#bookerLink').href = url;
+  f.onload = () => { if (f.getAttribute('src')) { clearTimeout(loaderTimer); loaderTimer = setTimeout(() => { l.classList.add('mini'); loaderTimer = setTimeout(() => l.classList.add('done'), 9000); }, 2500); } };
+  f.src = url;
+  loaderCap = setTimeout(() => l.classList.add('done'), 20000);
+  openModal($('#booker'));
+}
+
+document.addEventListener('click', e => {
+  const s = e.target.closest('[data-salon]');
+  if (s) {
+    const inHero = s.closest('#heroRating'); if (inHero) e.preventDefault();
+    const box = s.closest('[data-salon-tabs]') || (s.closest('#pick') ? $('#services [data-salon-tabs]') : null);
+    const key = s.dataset.salon;
+    setSalon(key, inHero ? '#reviews' : (s.closest('#pick') ? '#services' : null));
+    if (box) { const n = $('[data-salon="' + key + '"]', box); if (n) n.focus({ preventScroll: true }); }
+    return;
+  }
+  const c = e.target.closest('[data-cat]');
+  if (c) { cat = Number(c.dataset.cat); renderMenu(); const n = $('#cats [data-cat="' + cat + '"]'); if (n) n.focus({ preventScroll: true }); return; }
+  const b = e.target.closest('[data-book]');
+  if (b) {
+    const kind = b.dataset.book;
+    if (kind === 'choose') { renderChooser(); openModal($('#chooser')); }
+    else if (kind === 'menu') { const k = b.dataset.salonBook; openBooking(widgetMenu(k), t('book_at', { v: SALONS[k].name })); }
+    else if (kind === 'service' && PRICES && salon) openBooking(widgetService(salon, b.dataset.item, b.dataset.opt), b.dataset.name + ' · ' + SALONS[salon].name);
+    return;
+  }
+  if (e.target.closest('[data-close]') || e.target.classList.contains('modal')) { closeModal(); return; }
+  const clip = e.target.closest('.clip');
+  if (clip) toggleClip(clip);
+});
+document.addEventListener('keydown', e => {
+  const m = $('.modal.open'); if (!m) return;
+  if (e.key === 'Escape') closeModal();
+  if (e.key === 'Tab') {
+    const f = $$('button, a[href], iframe', m).filter(x => x.offsetParent !== null);
+    if (!f.length) return;
+    const first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  }
+});
+
+/* ---------- Vídeos: se cargan al entrar en pantalla ---------- */
+function ensureVideo(clip){
+  let v = $('video', clip);
+  if (!v) {
+    v = document.createElement('video');
+    v.muted = true; v.loop = true; v.playsInline = true; v.preload = 'metadata';
+    v.setAttribute('muted', ''); v.setAttribute('playsinline', '');
+    v.poster = clip.dataset.poster; v.src = clip.dataset.src;
+    clip.prepend(v);
+  }
+  return v;
+}
+function playClip(clip){ const v = ensureVideo(clip); const p = v.play(); if (p) p.then(() => clip.classList.add('playing')).catch(() => {}); }
+function pauseClip(clip){ const v = $('video', clip); if (v) v.pause(); clip.classList.remove('playing'); }
+function toggleClip(clip){ clip.dataset.user = '1'; clip.classList.contains('playing') ? pauseClip(clip) : playClip(clip); }
+const clipObserver = 'IntersectionObserver' in window ? new IntersectionObserver(entries => {
+  entries.forEach(en => {
+    const clip = en.target;
+    if (en.isIntersecting && en.intersectionRatio >= 0.6) { if (!reduceMotion) playClip(clip); else ensureVideo(clip); }
+    else pauseClip(clip);
+  });
+}, { threshold: [0, 0.6] }) : null;
+
+function renderVideos(data){
+  const list = (data && data.videos) || [];
+  const reel = $('#reel');
+  if (!list.length) { reel.hidden = true; return; }
+  reel.innerHTML = list.map(v => '<button class="clip" type="button" data-src="' + esc(v.mp4) + '" data-poster="' + esc(v.poster) +
+    '" style="background-image:url(\'' + esc(v.poster) + '\')" aria-label="' + esc(t('play_video')) + '"><span class="play" aria-hidden="true"></span></button>').join('');
+  $$('.clip', reel).forEach(c => clipObserver ? clipObserver.observe(c) : null);
+}
+function startHero(data){
+  const v = $('#heroVideo'), btn = $('#heroPause');
+  const h = (data && data.hero) || { mp4: 'media/video/hero.mp4', poster: 'media/video/hero.jpg' };
+  if (h.poster) v.poster = h.poster;
+  if (reduceMotion || !h.mp4) return;
+  v.muted = true;
+  let userPaused = false;
+  const go = () => { if (userPaused) return; if (!v.getAttribute('src')) v.src = h.mp4; const p = v.play(); if (p) p.catch(() => {}); };
+  btn.hidden = false;
+  btn.onclick = () => { userPaused = !userPaused; userPaused ? v.pause() : go(); btn.setAttribute('aria-pressed', userPaused); btn.textContent = userPaused ? '▶' : '❚❚'; };
+  if ('IntersectionObserver' in window) new IntersectionObserver(es => es.forEach(en => { en.isIntersecting ? go() : v.pause(); })).observe(v);
+  else go();
+}
+
+/* ---------- Dock móvil ---------- */
+(function(){
+  const dock = $('#dock'), hero = $('.hero');
+  if ('IntersectionObserver' in window) new IntersectionObserver(es => es.forEach(en => dock.classList.toggle('show', !en.isIntersecting)), { threshold: 0.15 }).observe(hero);
+  else dock.classList.add('show');
+})();
+
+/* ---------- Datos ---------- */
+const getJson = url => fetch(url, { cache: 'no-cache' }).then(r => { if (!r.ok) throw new Error(url + ' ' + r.status); return r.json(); });
+$('#year').textContent = new Date().getFullYear();
+renderAll();
+getJson('data/prijzen.json').then(d => {
+  if (!d || !SALON_KEYS.every(k => d[k] && d[k].groepen && d[k].groepen.length)) throw new Error('prijzen.json incompleto');
+  PRICES = d; renderAll(); renderJsonLd();
+}).catch(err => { console.error(err); priceError = true; renderMenu(); });
+getJson('data/reviews.json').then(d => { REVIEWS = d; renderReviews(); }).catch(() => {});
+getJson('data/videos.json').then(d => { renderVideos(d); startHero(d); }).catch(() => { renderVideos(null); startHero(null); });
+</script>
 </body>
 </html>
