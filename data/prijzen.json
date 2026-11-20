@@ -981,22 +981,22 @@
   "naam": "Ungles i Estètica",
   "beoordeling": {
    "weightedAverage": 4.84,
-   "count": 190,
+   "count": 191,
    "dimensions": [
     {
      "name": "Ambiente",
-     "average": 4.86,
-     "count": 140
+     "average": 4.87,
+     "count": 141
     },
     {
      "name": "Limpieza",
      "average": 4.89,
-     "count": 140
+     "count": 141
     },
     {
      "name": "Empleados",
      "average": 4.89,
-     "count": 140
+     "count": 141
     }
    ],
    "displayAverage": "4,8",
