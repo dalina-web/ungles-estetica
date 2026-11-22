@@ -3,27 +3,27 @@
   "venue_id": 504791,
   "naam": "Ungles i Estètica Sant Just Desvern",
   "beoordeling": {
-   "weightedAverage": 4.79,
-   "count": 69,
+   "weightedAverage": 4.8,
+   "count": 70,
    "dimensions": [
     {
      "name": "Ambiente",
      "average": 4.81,
-     "count": 51
+     "count": 52
     },
     {
      "name": "Limpieza",
      "average": 4.9,
-     "count": 51
+     "count": 52
     },
     {
      "name": "Empleados",
      "average": 4.86,
-     "count": 51
+     "count": 52
     }
    ],
    "displayAverage": "4,8",
-   "average": 4.79
+   "average": 4.8
   },
   "openingstijden": [
    {
