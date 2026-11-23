@@ -1,5 +1,5 @@
 {
- "gecontroleerd": "2026-11-23T11:55+00:00",
+ "gecontroleerd": "2026-11-23T14:28+00:00",
  "toelichting": "Vrije starttijden volgens de agenda van Treatwell, opgevraagd met dezelfde aanroep als de tijdkiezer van de boekwidget. Per vestiging samengevoegd over de opgevraagde behandelingen; alleen de eerste dagen met plek.",
  "bron": "widget.treatwell.es/datetime-ui/api/availability",
  "sant-just": {
@@ -9,13 +9,6 @@
    "Mujer - Manicura exprés"
   ],
   "dagen": [
-   {
-    "dag": "2026-11-23",
-    "tijden": [
-     "13:10",
-     "13:30"
-    ]
-   },
    {
     "dag": "2026-11-24",
     "tijden": [
@@ -66,6 +59,19 @@
      "11:15",
      "11:30"
     ]
+   },
+   {
+    "dag": "2026-11-30",
+    "tijden": [
+     "09:30",
+     "10:00",
+     "10:15",
+     "10:30",
+     "10:45",
+     "11:00",
+     "11:15",
+     "11:30"
+    ]
    }
   ]
  },
@@ -76,19 +82,6 @@
    "Manicura exprés"
   ],
   "dagen": [
-   {
-    "dag": "2026-11-23",
-    "tijden": [
-     "13:00",
-     "13:30",
-     "13:45",
-     "14:00",
-     "14:15",
-     "14:30",
-     "14:45",
-     "15:10"
-    ]
-   },
    {
     "dag": "2026-11-24",
     "tijden": [
@@ -130,6 +123,19 @@
    },
    {
     "dag": "2026-11-27",
+    "tijden": [
+     "10:00",
+     "10:30",
+     "10:45",
+     "11:00",
+     "11:15",
+     "11:30",
+     "11:45",
+     "12:00"
+    ]
+   },
+   {
+    "dag": "2026-11-30",
     "tijden": [
      "10:00",
      "10:30",
