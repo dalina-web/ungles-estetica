@@ -1,5 +1,5 @@
 {
- "bijgewerkt": "2026-11-17",
+ "bijgewerkt": "2026-11-25",
  "selectie": "De 6 recentste reviews (op plaatsingsdatum) per vestiging die Treatwell als geverifieerd markeert (verified=true), met 4 of 5 sterren en een door de klant zelf geschreven tekst van minstens 40 tekens, zonder plaatshouder zoals <UE> in de tekst, en hoogstens een review per voornaam. Geen selectie op inhoud; tekst letterlijk overgenomen.",
  "sant-just": {
   "reviews_url": "https://www.treatwell.es/establecimiento/ungles-i-estetica-sant-just-desvern/#reviews",
@@ -64,6 +64,15 @@
   "reviews_url": "https://www.treatwell.es/establecimiento/ungles-i-estetica/#reviews",
   "reviews": [
    {
+    "id": 30570093,
+    "voornaam": "Loli",
+    "datum": "2026-11-24",
+    "sterren": 5,
+    "tekst": "Me gusta mucho. Pero en un tiempo no iré las uñas están muy débiles",
+    "dienst": "Manicura",
+    "geverifieerd": true
+   },
+   {
     "id": 30107070,
     "voornaam": "Marielvis",
     "datum": "2026-10-17",
@@ -97,15 +106,6 @@
     "sterren": 5,
     "tekst": "Olga es una excelente profesional, la atención y el resultado han sido muy buenos.",
     "dienst": "Depilación de piernas mujer",
-    "geverifieerd": true
-   },
-   {
-    "id": 29832542,
-    "voornaam": "Loli",
-    "datum": "2026-09-25",
-    "sterren": 5,
-    "tekst": "Es mi primera vez pero no será la última,  me a gustado mucho lo profesional,  perfección, buen ambiente.  Olga estupenda.",
-    "dienst": "Pedicura, Manicura semipermanente",
     "geverifieerd": true
    },
    {
