@@ -1,24 +1,24 @@
 {
- "bijgewerkt": "2026-11-25",
+ "bijgewerkt": "2026-11-27",
  "selectie": "De 6 recentste reviews (op plaatsingsdatum) per vestiging die Treatwell als geverifieerd markeert (verified=true), met 4 of 5 sterren en een door de klant zelf geschreven tekst van minstens 40 tekens, zonder plaatshouder zoals <UE> in de tekst, en hoogstens een review per voornaam. Geen selectie op inhoud; tekst letterlijk overgenomen.",
  "sant-just": {
   "reviews_url": "https://www.treatwell.es/establecimiento/ungles-i-estetica-sant-just-desvern/#reviews",
   "reviews": [
+   {
+    "id": 30587281,
+    "voornaam": "Luis",
+    "datum": "2026-11-26",
+    "sterren": 5,
+    "tekst": "Gracias Valeria por la Manicura Semipermanente: Perfecta. Comoda y Elegante. Trato Excelente. Jovial y Muy Buena Musica Ambiental. Recomendare. Saludo. Luis",
+    "dienst": "Manicura semipermanente",
+    "geverifieerd": true
+   },
    {
     "id": 30338389,
     "voornaam": "Елена",
     "datum": "2026-11-05",
     "sterren": 5,
     "tekst": "Genial, y encima se tardó una hora!!! Sólo!",
-    "dienst": "Manicura semipermanente",
-    "geverifieerd": true
-   },
-   {
-    "id": 29975784,
-    "voornaam": "Luis",
-    "datum": "2026-10-07",
-    "sterren": 5,
-    "tekst": "Gracias Valeria : Manicura Semipermanente, Elegante, Moderna, Muy Profesional. Ambiente Agradable. Trato Jovial. Saludo Luis",
     "dienst": "Manicura semipermanente",
     "geverifieerd": true
    },

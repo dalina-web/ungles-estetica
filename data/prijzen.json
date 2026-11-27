@@ -4,22 +4,22 @@
   "naam": "Ungles i Estètica Sant Just Desvern",
   "beoordeling": {
    "weightedAverage": 4.8,
-   "count": 70,
+   "count": 71,
    "dimensions": [
     {
      "name": "Ambiente",
      "average": 4.81,
-     "count": 52
+     "count": 53
     },
     {
      "name": "Limpieza",
      "average": 4.9,
-     "count": 52
+     "count": 53
     },
     {
      "name": "Empleados",
      "average": 4.86,
-     "count": 52
+     "count": 53
     }
    ],
    "displayAverage": "4,8",
